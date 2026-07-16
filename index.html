@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Professor Lily Morningstar — Cybersecurity Education, Linux, Digital Forensics, AI
+    </title>
+    <meta
+      name="description"
+      content="Professional academic portfolio of Professor Lily Morningstar, Lead Cybersecurity Faculty at the College of Southern Nevada."
+    />
+    <script>
+      // Apply the saved (or system) theme before first paint to avoid a flash
+      // of the wrong theme. Kept inline intentionally.
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || ((stored === null || stored === 'system') && systemDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {
+          /* localStorage unavailable — fall back to light */
+        }
+      })();
+    </script>
+    <script>
+      // spa-github-pages (https://github.com/rafgraph/spa-github-pages)
+      // Decodes the redirect produced by 404.html so deep links work on
+      // GitHub Pages, which has no server-side rewrite support.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lily Morningstar",
+        "honorificPrefix": "Professor",
+        "jobTitle": "Lead Cybersecurity Faculty",
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "College of Southern Nevada"
+        },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Utica University" },
+          { "@type": "CollegeOrUniversity", "name": "North Caucasus Federal University" }
+        ],
+        "knowsAbout": [
+          "Cybersecurity education",
+          "Linux systems administration",
+          "Digital forensics",
+          "Artificial intelligence in higher education",
+          "Curriculum development"
+        ],
+        "email": "mailto:lily.morningstar@csn.edu",
+        "sameAs": ["https://www.linkedin.com/in/lily-morningstar-7532a8124"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

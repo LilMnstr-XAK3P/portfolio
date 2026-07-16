@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lilmnstr-xak3p.github.io/portfolio/sitemap.xml

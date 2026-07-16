@@ -1,0 +1,61 @@
+import type { SocialLink } from './types';
+
+/**
+ * Core professional identity. Edit this file to update the name, titles,
+ * biography, contact information, and social links shown across the site.
+ */
+export const profile = {
+  name: 'Professor Lily Morningstar',
+  shortName: 'Lily Morningstar',
+  primaryTitle: 'Lead Cybersecurity Faculty',
+  institution: 'College of Southern Nevada',
+  doctoralProgram:
+    'Doctoral Candidate in Curriculum and Instruction, Interaction & Media Sciences — University of Nevada, Las Vegas',
+  focusStatement:
+    'Cybersecurity Education | Linux | Digital Forensics | Artificial Intelligence | Curriculum Innovation',
+  /** Year she began teaching cybersecurity at CSN. Drives the
+   *  "years teaching cybersecurity" statistic — edit if incorrect. */
+  teachingSince: 2019,
+  emails: [
+    { label: 'CSN', address: 'lily.morningstar@csn.edu' },
+    { label: 'UNLV', address: 'mornil1@unlv.nevada.edu' },
+  ],
+  /** Path (relative to the site base) of the professional headshot.
+   *  Add the image at public/images/headshot.jpg, then set this to
+   *  'images/headshot.jpg'. While empty, a styled placeholder is shown. */
+  headshot: '',
+  bio: `Professor Lily Morningstar is a Lead Cybersecurity Faculty member at the College of Southern Nevada and a doctoral candidate in Curriculum and Instruction, with a specialization in Interaction and Media Sciences, at the University of Nevada, Las Vegas. She specializes in cybersecurity education, Linux systems administration, digital forensics, artificial intelligence integration, and workforce-aligned curriculum development.
+
+Professor Morningstar has led the redesign of multiple cybersecurity degree pathways; developed innovative courses in cloud security, ethical hacking, and digital forensics; and actively contributes to national computing education initiatives through the Association for Computing Machinery Committee for Computing Education in Community Colleges. Her professional activities include AI curriculum evaluation, faculty development in AI fluency and responsible AI, and collaboration with industry and academic partners to strengthen cybersecurity education.
+
+As coach of the CSN CTF Squad, she mentors students in national cybersecurity competitions, helping them achieve top national rankings. Her research and professional interests focus on AI-enhanced learning, gamification, experiential cybersecurity education, and preparing students for the evolving AI-enabled workforce.`,
+  introSummary:
+    'Working at the intersection of cybersecurity, artificial intelligence, and curriculum leadership — designing workforce-aligned degree pathways, integrating responsible AI into higher education, and coaching students to national success in cybersecurity competitions.',
+  professionalPhilosophy:
+    'Education should prepare students for the workforce they will actually enter. That means curriculum grounded in industry certifications and real tooling, honest engagement with emerging technology such as AI, and programs designed around measurable student outcomes rather than tradition.',
+  teachingPhilosophy:
+    'Students learn cybersecurity by doing cybersecurity. Hands-on labs, Capture-the-Flag challenges, simulations, and reflection-driven assessment turn abstract concepts into durable skills — and gamified, experiential learning builds the confidence and self-efficacy students need to persist in the field.',
+  affiliations: [
+    'Association for Computing Machinery (ACM)',
+    'ACM Committee for Computing Education in Community Colleges (CCECC) — contributor',
+    'CAE in Cybersecurity Community',
+    'National Cyber League — faculty coach',
+  ],
+} as const;
+
+/**
+ * Social and scholarly profile links.
+ * Leave url: '' for accounts not yet supplied — blank entries are hidden
+ * from the site automatically. Do not guess URLs.
+ */
+export const socialLinks: SocialLink[] = [
+  {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/lily-morningstar-7532a8124',
+  },
+  { id: 'github', label: 'GitHub', url: 'https://github.com/LilMnstr-XAK3P' },
+  { id: 'orcid', label: 'ORCID', url: '' }, // TODO: owner to supply
+  { id: 'scholar', label: 'Google Scholar', url: '' }, // TODO: owner to supply
+  { id: 'researchgate', label: 'ResearchGate', url: '' }, // TODO: owner to supply
+];
