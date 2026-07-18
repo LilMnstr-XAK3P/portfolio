@@ -164,6 +164,8 @@ export interface StudentResult {
   title: string;
   detail: string;
   season?: string;
+  /** Link to official results (e.g. Cyber Skyline) shown as evidence. */
+  url?: string;
   verified: boolean;
   public: boolean;
   internalNotes?: string;

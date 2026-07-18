@@ -25,33 +25,25 @@ export const ctfSquad = {
  * and explain in internalNotes — never display contradictory statistics.
  */
 export const competitionResults: StudentResult[] = [
-  // Figures from the owner's 2026 CV (authoritative source).
+  // Verified by the owner against official Cyber Skyline results.
   {
-    id: 'ncl-2026-team-44',
+    id: 'ncl-2026-team-56',
     title: 'National Cyber League — CSN Team Placement',
-    detail: '44th nationally',
+    detail: '56th nationally',
     season: 'Spring 2026',
+    url: 'https://cyberskyline.com/hosted_events/ncl-spring-2026',
     verified: true,
     public: true,
   },
   {
     id: 'ncl-2026-college-59',
-    title: 'National Cyber League — College Placement',
-    detail: '59th nationally, competing against approximately 500 colleges and universities',
+    title: 'National Cyber League — CSN College Power Ranking',
+    detail:
+      '59th nationally in the overall college Power Ranking, among approximately 500 colleges and universities',
     season: 'Spring 2026',
+    url: 'https://cyberskyline.com/data/power-ranking/spring-2026-national',
     verified: true,
     public: true,
-  },
-  {
-    id: 'ncl-2026-earlier-reported',
-    title: 'Earlier reported results (superseded — owner review)',
-    detail:
-      'Previously supplied figures: team placements 56th and 199th nationally out of approximately 4,000 teams. Superseded by the 2026 CV figures above; kept here for reconciliation only.',
-    season: 'Spring 2026',
-    verified: false,
-    public: false,
-    internalNotes:
-      'Conflicting ranking sets: original project brief said 56th/199th of ~4,000 teams; the 2026 CV says team 44th and college 59th of ~500 colleges. The CV figures are displayed publicly. Delete this record once reconciled against official NCL results.',
   },
 ];
 

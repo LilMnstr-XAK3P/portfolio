@@ -11,7 +11,7 @@ export const profile = {
   primaryTitle: 'Professor of Cybersecurity and Digital Forensics',
   institution: 'College of Southern Nevada',
   doctoralProgram:
-    'Doctoral Candidate in Curriculum and Instruction, Interaction & Media Sciences — University of Nevada, Las Vegas',
+    'Doctoral Student in Curriculum and Instruction, Interaction & Media Sciences — University of Nevada, Las Vegas',
   focusStatement:
     'Cybersecurity Education | Linux | Digital Forensics | Artificial Intelligence | Curriculum Innovation',
   /** Year she began teaching cybersecurity at CSN. Drives the
@@ -26,7 +26,7 @@ export const profile = {
    *  Add the image at public/images/headshot.jpg, then set this to
    *  'images/headshot.jpg'. While empty, a styled placeholder is shown. */
   headshot: '',
-  bio: `Professor Lily Morningstar is a Lead Cybersecurity Faculty member at the College of Southern Nevada and a doctoral candidate in Curriculum and Instruction, with a specialization in Interaction and Media Sciences, at the University of Nevada, Las Vegas. She specializes in cybersecurity education, Linux systems administration, digital forensics, artificial intelligence integration, and workforce-aligned curriculum development.
+  bio: `Professor Lily Morningstar is a Lead Cybersecurity Faculty member at the College of Southern Nevada and a doctoral student in Curriculum and Instruction, with a specialization in Interaction and Media Sciences, at the University of Nevada, Las Vegas. She specializes in cybersecurity education, Linux systems administration, digital forensics, artificial intelligence integration, and workforce-aligned curriculum development.
 
 Professor Morningstar has led the redesign of multiple cybersecurity degree pathways; developed innovative courses in cloud security, ethical hacking, and digital forensics; and actively contributes to national computing education initiatives through the Association for Computing Machinery Committee for Computing Education in Community Colleges. Her professional activities include AI curriculum evaluation, faculty development in AI fluency and responsible AI, and collaboration with industry and academic partners to strengthen cybersecurity education.
 

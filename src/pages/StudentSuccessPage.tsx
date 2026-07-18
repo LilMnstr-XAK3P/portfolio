@@ -2,6 +2,7 @@ import { Flag, Trophy } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { TagChip } from '../components/TagChip';
 import { EmptyState } from '../components/EmptyState';
+import { ExternalLink } from '../components/ExternalLink';
 import { useSeo } from '../hooks/useSeo';
 import { ctfSquad, competitionResults, studentEngagements } from '../data/studentSuccess';
 import { publicOnly } from '../lib/dataUtils';
@@ -63,6 +64,13 @@ export function StudentSuccessPage() {
                     <div>
                       <p className="font-medium text-stone-900 dark:text-white">{result.title}</p>
                       <p className="text-sm text-stone-600 dark:text-stone-400">{result.detail}</p>
+                      {result.url && (
+                        <p className="mt-1 text-sm">
+                          <ExternalLink href={result.url} className="link">
+                            Official results
+                          </ExternalLink>
+                        </p>
+                      )}
                     </div>
                   </li>
                 ))}
