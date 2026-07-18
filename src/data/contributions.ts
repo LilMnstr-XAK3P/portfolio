@@ -40,6 +40,8 @@ export const contributions: Contribution[] = [
       "Proposed Bloom's taxonomy-aligned revisions",
       'Increased rigor and assessment alignment',
       'Contributed to security engineering, digital forensics, cryptography, ethics, societal impact, and AI-related cybersecurity topics',
+      'Strengthened integration of Society, Ethics, and the Profession (SEP) and responsible computing principles',
+      'Provided input on emerging topics including adversarial machine learning and risk analysis',
     ],
     national: true,
     tags: ['acm', 'cybersecurity', 'ethics', 'curriculum'],
@@ -49,9 +51,9 @@ export const contributions: Contribution[] = [
   {
     id: 'ap-cybersecurity-evaluation',
     title: 'AP Cybersecurity Curriculum Evaluation',
-    // Verified role: AP Reader program participant and curriculum evaluator.
-    // Do not add College Board titles beyond this verified role.
-    organization: 'AP Reader Program',
+    // Verified role per CV: AP Reader / Contributor, AP Cybersecurity Pilot
+    // Program. Do not add College Board titles beyond this verified role.
+    organization: 'AP Cybersecurity Pilot Program — AP Reader / Contributor',
     startDate: '2026-01-01',
     displayDate: '2026',
     category: 'National Curriculum Contribution',

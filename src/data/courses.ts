@@ -5,7 +5,7 @@ export const coursesTaught: Course[] = [
   // Linux and Systems Administration
   {
     id: 'cit173',
-    code: 'CIT 173',
+    code: 'CIT 173 / CSEC 173',
     title: 'Introduction to Linux',
     group: 'Linux and Systems Administration',
     terms: 'Spring 2020 to Present',
@@ -14,7 +14,7 @@ export const coursesTaught: Course[] = [
   },
   {
     id: 'cit174',
-    code: 'CIT 174',
+    code: 'CIT 174 / CSEC 174',
     title: 'Linux System Administration',
     group: 'Linux and Systems Administration',
     terms: 'Fall 2025',
@@ -24,7 +24,7 @@ export const coursesTaught: Course[] = [
   // Cybersecurity
   {
     id: 'cit217',
-    code: 'CIT 217',
+    code: 'CIT 217 / CSEC 217',
     title: 'Security+',
     group: 'Cybersecurity',
     terms: 'Fall 2019 to Present',
@@ -33,7 +33,7 @@ export const coursesTaught: Course[] = [
   },
   {
     id: 'cit112b',
-    code: 'CIT 112B',
+    code: 'CIT 112 / CSEC 112',
     title: 'Network+',
     group: 'Cybersecurity',
     terms: 'Fall 2019 to Present',
@@ -42,7 +42,7 @@ export const coursesTaught: Course[] = [
   },
   {
     id: 'cit274b-csec281',
-    code: 'CIT 274B / CSEC 281',
+    code: 'CIT 274B / CSEC 281B',
     title: 'Ethical Hacking',
     group: 'Cybersecurity',
     terms: 'Spring 2021 to Present',
@@ -81,6 +81,7 @@ export const coursesTaught: Course[] = [
     id: 'csec110b',
     code: 'CSEC 110B',
     title: 'Introduction to Digital Forensics',
+    description: 'Formerly CF 173.',
     group: 'Digital Forensics',
     terms: 'Fall 2021 to Present',
     tags: ['forensics'],

@@ -1,6 +1,10 @@
 import type { ResearchWork } from './types';
 
 export const researchInterests = [
+  'AI in education',
+  'Cybersecurity education',
+  'Accessibility and universal design for learning',
+  'Learning analytics',
   'Women in cybersecurity',
   'Capture-the-Flag participation',
   'Self-efficacy',

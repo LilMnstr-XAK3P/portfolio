@@ -10,7 +10,8 @@ import { coursesTaught, courseGroupOrder } from '../data/courses';
 import { newCourses, courseRedesigns, programRedesigns } from '../data/curriculum';
 import { contributions } from '../data/contributions';
 import { professionalDevelopment } from '../data/professionalDevelopment';
-import { serviceRoles } from '../data/service';
+import { serviceRoles, volunteerRoles } from '../data/service';
+import { experience } from '../data/experience';
 import { ctfSquad, competitionResults } from '../data/studentSuccess';
 import { mediaItems } from '../data/media';
 import { currentResearch, researchInterests } from '../data/research';
@@ -74,6 +75,25 @@ function buildSections(): CVSection[] {
                 <p className="text-sm text-slate-500 dark:text-slate-400">
                   Capstone: {entry.capstone}
                 </p>
+              )}
+            </Entry>
+          ))}
+        </div>
+      ),
+    },
+    {
+      id: 'experience',
+      title: 'Professional Experience',
+      areas: ['Grant CV', 'Cybersecurity Education', 'Professional Service'],
+      content: (
+        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+          {publicOnly(experience).map((entry) => (
+            <Entry key={entry.id} heading={entry.role} meta={entry.period}>
+              <p className="text-sm text-slate-600 dark:text-slate-400">
+                {[entry.organization, entry.location].filter(Boolean).join(' — ')}
+              </p>
+              {entry.summary && (
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{entry.summary}</p>
               )}
             </Entry>
           ))}
@@ -245,10 +265,22 @@ function buildSections(): CVSection[] {
       title: 'Institutional Service',
       areas: ['Professional Service', 'Grant CV'],
       content: (
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
-          {publicOnly(serviceRoles).map((role) => (
-            <Entry key={role.id} heading={role.role} meta={role.period} />
-          ))}
+        <div className="space-y-4">
+          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+            {publicOnly(serviceRoles).map((role) => (
+              <Entry key={role.id} heading={role.role} meta={role.period} />
+            ))}
+          </div>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              Volunteer Experience
+            </p>
+            <div className="divide-y divide-slate-100 dark:divide-slate-800">
+              {publicOnly(volunteerRoles).map((v) => (
+                <Entry key={v.id} heading={v.organization} meta={v.period} />
+              ))}
+            </div>
+          </div>
         </div>
       ),
     },

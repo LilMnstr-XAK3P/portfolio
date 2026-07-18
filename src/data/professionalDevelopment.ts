@@ -208,10 +208,29 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     category: 'Artificial Intelligence',
     format: 'Webinar',
     hours: 1,
+    certificate: true,
     summary:
-      'Advanced prompt-engineering session on context engineering — structuring the context stack for reliable, grounded model behavior.',
+      'Advanced training in context engineering, prompt design, AI workflow optimization, and reusable AI collaboration strategies for cybersecurity and education. Certificate of completion.',
     skills: ['Prompt engineering', 'Context engineering'],
     tags: ['ai', 'prompt-engineering', 'cybersecurity'],
+    public: true,
+  },
+  {
+    id: 'openai-higher-ed-2026',
+    title: 'OpenAI ChatGPT for Higher Education Faculty',
+    provider: 'OpenAI',
+    // Completed in 2026 per CV; exact date and hours pending — edit when known.
+    startDate: '2026-07-01',
+    displayDate: '2026',
+    type: 'Course',
+    category: 'Artificial Intelligence',
+    format: 'Online training',
+    summary:
+      'Higher-education training series covering Codex for faculty and researchers, creating workspace agents for higher-ed faculty and researchers, and building with Codex in education.',
+    skills: ['AI-assisted teaching', 'Workspace agents', 'AI-assisted development'],
+    application:
+      'Applies Codex and workspace agents to instructional design and faculty workflows.',
+    tags: ['ai', 'openai', 'faculty-development'],
     public: true,
   },
   {

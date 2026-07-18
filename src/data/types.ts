@@ -190,6 +190,27 @@ export interface ResearchWork {
   internalNotes?: string;
 }
 
+export interface ExperienceEntry {
+  id: string;
+  role: string;
+  organization: string;
+  location?: string;
+  period: string;
+  /** ISO start date for sorting. */
+  startDate: string;
+  summary?: string;
+  details?: string[];
+  public: boolean;
+}
+
+export interface VolunteerEntry {
+  id: string;
+  organization: string;
+  period: string;
+  startDate: string;
+  public: boolean;
+}
+
 export interface SocialLink {
   id: string;
   label: string;

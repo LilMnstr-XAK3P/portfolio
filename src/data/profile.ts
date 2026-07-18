@@ -7,7 +7,8 @@ import type { SocialLink } from './types';
 export const profile = {
   name: 'Professor Lily Morningstar',
   shortName: 'Lily Morningstar',
-  primaryTitle: 'Lead Cybersecurity Faculty',
+  // Title per CV (2026): appointed 2019, tenured 2023; serves as lead faculty.
+  primaryTitle: 'Professor of Cybersecurity and Digital Forensics',
   institution: 'College of Southern Nevada',
   doctoralProgram:
     'Doctoral Candidate in Curriculum and Instruction, Interaction & Media Sciences — University of Nevada, Las Vegas',
@@ -19,6 +20,7 @@ export const profile = {
   emails: [
     { label: 'CSN', address: 'lily.morningstar@csn.edu' },
     { label: 'UNLV', address: 'mornil1@unlv.nevada.edu' },
+    { label: 'Personal', address: 'morningstar.lily@outlook.com' },
   ],
   /** Path (relative to the site base) of the professional headshot.
    *  Add the image at public/images/headshot.jpg, then set this to
@@ -36,10 +38,13 @@ As coach of the CSN CTF Squad, she mentors students in national cybersecurity co
   teachingPhilosophy:
     'Students learn cybersecurity by doing cybersecurity. Hands-on labs, Capture-the-Flag challenges, simulations, and reflection-driven assessment turn abstract concepts into durable skills — and gamified, experiential learning builds the confidence and self-efficacy students need to persist in the field.',
   affiliations: [
-    'Association for Computing Machinery (ACM)',
-    'ACM Committee for Computing Education in Community Colleges (CCECC) — contributor',
-    'CAE in Cybersecurity Community',
-    'National Cyber League — faculty coach',
+    'ACM Committee for Computing Education in Community Colleges (CCECC) — Contributor (2026)',
+    'AP Reader — AP Cybersecurity Pilot Program, Contributor (2026)',
+    'CAE in Cybersecurity Community — Regular Participant (2025–Present)',
+    'National Cyber League — Faculty Coach',
+    "Women's Society of Cyberjutsu (member since 2017; volunteer)",
+    'WiCyS (Women in CyberSecurity)', // TODO (owner): CV reads "WyCiS" — confirm exact organization name
+    'Information Systems Security Association (ISSA)',
   ],
 } as const;
 

@@ -1,4 +1,4 @@
-import type { ServiceRole } from './types';
+import type { ServiceRole, VolunteerEntry } from './types';
 
 /** Institutional service roles, newest first by startDate. */
 export const serviceRoles: ServiceRole[] = [
@@ -24,6 +24,24 @@ export const serviceRoles: ServiceRole[] = [
     public: true,
   },
   {
+    id: 'modality-policy',
+    role: 'Modality Policy Development Contributor',
+    organization: 'College of Southern Nevada',
+    period: '2024 to Present',
+    startDate: '2024-01-03',
+    tags: ['policy', 'service'],
+    public: true,
+  },
+  {
+    id: 'student-auth-policy',
+    role: 'Student Authentication Policy Development Contributor',
+    organization: 'College of Southern Nevada',
+    period: '2024',
+    startDate: '2024-01-04',
+    tags: ['policy', 'service'],
+    public: true,
+  },
+  {
     id: 'tenured-professor',
     role: 'Tenured Professor',
     organization: 'College of Southern Nevada',
@@ -36,7 +54,7 @@ export const serviceRoles: ServiceRole[] = [
     id: 'professional-advancement',
     role: 'Professional Advancement Committee Associate',
     organization: 'College of Southern Nevada',
-    period: '2023 to Present',
+    period: '2023 to 2025',
     startDate: '2023-01-02',
     tags: ['service'],
     public: true,
@@ -52,11 +70,29 @@ export const serviceRoles: ServiceRole[] = [
   },
   {
     id: 'faculty-senator',
-    role: 'Faculty Senator, School of Applied Technology',
+    role: 'Elected Faculty Senator, School of Applied Technology',
     organization: 'College of Southern Nevada',
     period: '2020 to 2024',
     startDate: '2020-01-01',
     tags: ['service', 'governance'],
+    public: true,
+  },
+];
+
+/** Volunteer experience (shown on the CV page). */
+export const volunteerRoles: VolunteerEntry[] = [
+  {
+    id: 'cyberjutsu-volunteer',
+    organization: "Women's Society of Cyberjutsu",
+    period: '2017 to Present',
+    startDate: '2017-01-01',
+    public: true,
+  },
+  {
+    id: 'church-volunteer',
+    organization: 'Russian Orthodox Church of the Holy Transfiguration',
+    period: '2012 to 2016',
+    startDate: '2012-01-01',
     public: true,
   },
 ];

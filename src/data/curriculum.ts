@@ -4,7 +4,7 @@ import type { CurriculumItem } from './types';
 export const newCourses: CurriculumItem[] = [
   {
     id: 'csec100',
-    title: 'CSEC 100: Cloud Security Essentials',
+    title: 'CSEC 100: Cloud Security',
     kind: 'created',
     tags: ['cloud-security'],
     public: true,
@@ -18,9 +18,10 @@ export const newCourses: CurriculumItem[] = [
   },
   {
     id: 'csec181',
-    title: 'CSEC 181: Ethical Hacking Fundamentals',
+    title: 'CSEC 181 and CSEC 281: Ethical Hacking',
     kind: 'created',
-    tags: ['ethical-hacking'],
+    description: 'Certified Ethical Hacker (CEH) Practical certification preparation courses.',
+    tags: ['ethical-hacking', 'certification'],
     public: true,
   },
   {
@@ -35,7 +36,7 @@ export const newCourses: CurriculumItem[] = [
     title: 'CSEC 120, 121, 220, and 221: Digital Forensics CHFI Pathway',
     kind: 'created',
     description:
-      'A four-course digital forensics pathway aligned with the Computer Hacking Forensic Investigator (CHFI) certification.',
+      'A four-course digital forensics pathway preparing students for the Computer Hacking Forensics Investigator (CHFI) certification.',
     tags: ['forensics', 'certification'],
     public: true,
   },
@@ -104,7 +105,8 @@ export const programRedesigns: CurriculumItem[] = [
       'Led the redesign of the Cybersecurity–Network Security Associate of Applied Science degree.',
     details: [
       'Replaced a legacy capstone with CSEC 286: Applied Network Defense',
-      'Introduced specialization pathways in cloud security, digital forensics, offensive security, compliance, and artificial intelligence',
+      'Developed specialization pathways: Artificial Intelligence, Cloud Security, Offensive Security, Compliance, and Digital Forensics',
+      'Emphasized hands-on labs, applied security skills, and alignment with EC-Council, CompTIA, and other industry standards',
     ],
     tags: ['program-redesign', 'network-security'],
     public: true,

@@ -1,10 +1,11 @@
-import { GraduationCap } from 'lucide-react';
+import { Briefcase, GraduationCap } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { TagChip } from '../components/TagChip';
 import { DownloadButton } from '../components/DownloadButton';
 import { useSeo } from '../hooks/useSeo';
 import { profile } from '../data/profile';
 import { education } from '../data/education';
+import { experience } from '../data/experience';
 import { skillGroups } from '../data/skills';
 import { researchInterests } from '../data/research';
 import { siteConfig } from '../data/siteConfig';
@@ -72,6 +73,45 @@ export function AboutPage() {
                       </span>{' '}
                       {entry.capstone}
                     </p>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Professional experience */}
+      <section aria-labelledby="experience-heading">
+        <SectionHeading id="experience-heading" title="Professional Experience" />
+        <div className="space-y-4">
+          {publicOnly(experience).map((entry) => (
+            <article key={entry.id} className="card p-5">
+              <div className="flex items-start gap-3">
+                <div className="rounded-lg bg-brand-50 p-2 text-brand-700 dark:bg-brand-900/40 dark:text-brand-400">
+                  <Briefcase className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                    <h3 className="font-semibold text-slate-900 dark:text-white">{entry.role}</h3>
+                    <p className="shrink-0 text-sm font-medium text-slate-500 dark:text-slate-400">
+                      {entry.period}
+                    </p>
+                  </div>
+                  <p className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                    {[entry.organization, entry.location].filter(Boolean).join(' — ')}
+                  </p>
+                  {entry.summary && (
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                      {entry.summary}
+                    </p>
+                  )}
+                  {entry.details && (
+                    <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-600 dark:text-slate-400">
+                      {entry.details.map((d) => (
+                        <li key={d}>{d}</li>
+                      ))}
+                    </ul>
                   )}
                 </div>
               </div>

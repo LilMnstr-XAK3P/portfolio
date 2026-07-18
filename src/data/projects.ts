@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: 'SCORM Linux Labs',
     status: 'active',
     description:
-      'SCORM-packaged interactive Linux lab simulations that run inside the learning management system, giving students hands-on command-line practice with instant feedback.',
+      'Autograded SCORM Linux practice labs for CIT 173, built to support students who lack access to dedicated computing resources and to give instructors a consistent, automated grading process.',
     technologies: ['SCORM', 'JavaScript', 'HTML', 'Instructional design'],
     outcomes: ['Reusable lab modules deployed in CSN Linux courses'],
     repoUrl: 'https://github.com/LilMnstr-XAK3P/SCORM-Linux-Labs',
@@ -25,10 +25,10 @@ export const projects: Project[] = [
   },
   {
     id: 'scorm-blum-linux-plus',
-    title: 'SCORM Blum Linux+ Labs',
+    title: "SCORM Blum's Linux+ Prep Practice Labs",
     status: 'active',
     description:
-      'SCORM lab package aligned with Linux+ certification topics, extending the Linux lab series with certification-focused practice.',
+      "Autograded SCORM practice labs following Blum's Linux+ preparation material, extending the CIT 173 lab series with CompTIA Linux+ certification-focused practice.",
     technologies: ['SCORM', 'JavaScript', 'Instructional design'],
     repoUrl: 'https://github.com/LilMnstr-XAK3P/SCORM-Blum-Linux-Plus',
     visibility: 'public',
@@ -36,11 +36,22 @@ export const projects: Project[] = [
     public: true,
   },
   {
+    id: 'scorm-linux-final-assessment',
+    title: 'SCORM Linux Final Assessment Labs',
+    status: 'active',
+    description: 'Autograded SCORM final-assessment labs completing the CIT 173 Linux lab series.',
+    technologies: ['SCORM', 'JavaScript', 'Instructional design'],
+    // No public repository link on the CV — add repoUrl when available.
+    visibility: 'private',
+    tags: ['ai', 'linux', 'scorm'],
+    public: true,
+  },
+  {
     id: 'cit173-linux-map',
     title: 'CIT 173 Linux Curriculum Map',
     status: 'active',
     description:
-      'Curriculum-mapping tool for CIT 173: Introduction to Linux, connecting course topics, learning outcomes, and assessments.',
+      'Course map app for CIT 173: Introduction to Linux, aligned with UNLV curriculum and focused on CompTIA Linux+ certification preparation.',
     technologies: ['TypeScript', 'Curriculum mapping'],
     repoUrl: 'https://github.com/LilMnstr-XAK3P/cit173-linux-map',
     visibility: 'public',
@@ -52,7 +63,7 @@ export const projects: Project[] = [
     title: 'Degree Advisor',
     status: 'in-development',
     description:
-      'AI-assisted degree-advising tool that helps students navigate cybersecurity degree pathways, course sequencing, and specialization options.',
+      'Degree Advisor web and mobile app helping students navigate cybersecurity degree pathways, course sequencing, and specialization options.',
     technologies: ['TypeScript', 'AI', 'Retrieval-Augmented Generation'],
     repoUrl: 'https://github.com/LilMnstr-XAK3P/degree-advisor',
     visibility: 'public',
@@ -65,7 +76,7 @@ export const projects: Project[] = [
     title: 'CyberCenter',
     status: 'in-development',
     description:
-      'Web hub for CSN cybersecurity students — program information, competition resources, and grounded course-assistant experiments.',
+      'Development and editing of the CSN Cyber Center web page — program information and resources for cybersecurity students.',
     technologies: ['TypeScript', 'React', 'AI'],
     repoUrl: 'https://github.com/LilMnstr-XAK3P/cybercenter',
     visibility: 'public',

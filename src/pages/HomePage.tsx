@@ -81,8 +81,9 @@ export function HomePage() {
                 National Cyber League Coaching
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                Coached the CSN CTF Squad through the Spring 2026 National Cyber League season, with
-                teams placing 56th and 199th nationally among approximately 4,000 teams.
+                Coached the CSN CTF Squad through the Spring 2026 National Cyber League season: team
+                placement 44th nationally and college placement 59th nationally, among approximately
+                500 colleges and universities.
               </p>
             </article>
             <article className="card p-5">
