@@ -12,16 +12,16 @@ export function Breadcrumbs() {
 
   return (
     <nav aria-label="Breadcrumb" className="no-print container-content pt-6">
-      <ol className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400">
+      <ol className="flex items-center gap-1.5 text-sm text-stone-500 dark:text-stone-400">
         <li>
-          <Link to="/" className="hover:text-slate-900 dark:hover:text-white">
+          <Link to="/" className="hover:text-stone-900 dark:hover:text-white">
             Home
           </Link>
         </li>
         <li aria-hidden="true">
           <ChevronRight className="h-3.5 w-3.5" />
         </li>
-        <li aria-current="page" className="font-medium text-slate-900 dark:text-white">
+        <li aria-current="page" className="font-medium text-stone-900 dark:text-white">
           {label}
         </li>
       </ol>

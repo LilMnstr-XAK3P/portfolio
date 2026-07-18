@@ -19,12 +19,7 @@ function CopyEmailButton({ address }: { address: string }) {
   };
 
   return (
-    <button
-      type="button"
-      onClick={copy}
-      className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
-      aria-live="polite"
-    >
+    <button type="button" onClick={copy} className="btn-secondary !px-4 !py-1.5" aria-live="polite">
       {copied ? (
         <>
           <Check className="h-4 w-4 text-emerald-600" aria-hidden="true" />
@@ -59,7 +54,7 @@ export function ContactPage() {
 
       {/* Email */}
       <section aria-labelledby="email-heading">
-        <h2 id="email-heading" className="mb-4 text-xl font-bold text-slate-900 dark:text-white">
+        <h2 id="email-heading" className="mb-4 text-xl font-bold text-stone-900 dark:text-white">
           Email
         </h2>
         <div className="space-y-3">
@@ -69,7 +64,7 @@ export function ContactPage() {
               className="card flex flex-wrap items-center justify-between gap-3 p-4"
             >
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
                   {email.label}
                 </p>
                 <a
@@ -90,25 +85,25 @@ export function ContactPage() {
       <section aria-labelledby="institution-heading">
         <h2
           id="institution-heading"
-          className="mb-4 text-xl font-bold text-slate-900 dark:text-white"
+          className="mb-4 text-xl font-bold text-stone-900 dark:text-white"
         >
           Institution
         </h2>
         <div className="card p-4">
-          <p className="font-medium text-slate-900 dark:text-white">{profile.institution}</p>
-          <p className="text-sm text-slate-600 dark:text-slate-400">{profile.primaryTitle}</p>
+          <p className="font-medium text-stone-900 dark:text-white">{profile.institution}</p>
+          <p className="text-sm text-stone-600 dark:text-stone-400">{profile.primaryTitle}</p>
         </div>
       </section>
 
       {/* Profiles */}
       <section aria-labelledby="profiles-heading">
-        <h2 id="profiles-heading" className="mb-4 text-xl font-bold text-slate-900 dark:text-white">
+        <h2 id="profiles-heading" className="mb-4 text-xl font-bold text-stone-900 dark:text-white">
           Professional Profiles
         </h2>
         <ul className="space-y-2">
           {activeSocial.map((s) => (
             <li key={s.id} className="card flex items-center justify-between p-4">
-              <span className="font-medium text-slate-900 dark:text-white">{s.label}</span>
+              <span className="font-medium text-stone-900 dark:text-white">{s.label}</span>
               <ExternalLink href={s.url} className="link text-sm">
                 View profile
               </ExternalLink>
@@ -116,8 +111,8 @@ export function ContactPage() {
           ))}
           {pendingSocial.map((s) => (
             <li key={s.id} className="card flex items-center justify-between border-dashed p-4">
-              <span className="font-medium text-slate-500 dark:text-slate-400">{s.label}</span>
-              <span className="text-sm text-slate-400 dark:text-slate-500">Coming soon</span>
+              <span className="font-medium text-stone-500 dark:text-stone-400">{s.label}</span>
+              <span className="text-sm text-stone-400 dark:text-stone-500">Coming soon</span>
             </li>
           ))}
         </ul>

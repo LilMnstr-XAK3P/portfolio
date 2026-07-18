@@ -10,16 +10,17 @@
   }
 
   body {
-    @apply bg-white text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-200;
+    /* Warm ivory "paper" background; white cards sit on top of it. */
+    @apply bg-stone-50 text-stone-800 antialiased dark:bg-stone-950 dark:text-stone-200;
   }
 
   /* Visible, consistent focus indicator for keyboard users (WCAG 2.4.7). */
   :focus-visible {
-    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-white dark:ring-brand-400 dark:ring-offset-slate-950;
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-stone-50 dark:ring-brand-400 dark:ring-offset-stone-950;
   }
 
   ::selection {
-    @apply bg-brand-200 text-slate-900;
+    @apply bg-brand-200 text-stone-900;
   }
 }
 
@@ -29,11 +30,20 @@
   }
 
   .card {
-    @apply rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900;
+    @apply rounded-xl border border-stone-200 bg-white shadow-sm dark:border-stone-800 dark:bg-stone-900;
   }
 
   .link {
     @apply font-medium text-brand-700 underline-offset-2 hover:underline dark:text-brand-400;
+  }
+
+  /* Pill buttons, matching the black-pill / outlined-pill visual language. */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-stone-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-5 py-2.5 text-sm font-semibold text-stone-800 transition-colors hover:bg-stone-100 dark:border-stone-700 dark:bg-transparent dark:text-stone-200 dark:hover:bg-stone-800;
   }
 }
 

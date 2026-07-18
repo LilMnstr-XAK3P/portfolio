@@ -12,15 +12,15 @@ interface EmptyStateProps {
 export function EmptyState({ title, message, hints, icon: Icon = FileText }: EmptyStateProps) {
   return (
     <div className="card flex flex-col items-center gap-3 border-dashed p-10 text-center">
-      <Icon className="h-8 w-8 text-slate-400 dark:text-slate-500" aria-hidden="true" />
-      <p className="font-semibold text-slate-900 dark:text-white">{title}</p>
-      <p className="max-w-md text-sm text-slate-600 dark:text-slate-400">{message}</p>
+      <Icon className="h-8 w-8 text-stone-400 dark:text-stone-500" aria-hidden="true" />
+      <p className="font-semibold text-stone-900 dark:text-white">{title}</p>
+      <p className="max-w-md text-sm text-stone-600 dark:text-stone-400">{message}</p>
       {hints && hints.length > 0 && (
         <ul className="mt-1 flex flex-wrap justify-center gap-2">
           {hints.map((hint) => (
             <li
               key={hint}
-              className="rounded-full border border-dashed border-slate-300 px-3 py-1 text-xs text-slate-500 dark:border-slate-700 dark:text-slate-400"
+              className="rounded-full border border-dashed border-stone-300 px-3 py-1 text-xs text-stone-500 dark:border-stone-700 dark:text-stone-400"
             >
               {hint}
             </li>

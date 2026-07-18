@@ -80,7 +80,7 @@ export function ProfessionalDevelopmentPage() {
         <StatCard value={totalCeus(filtered)} label="CEUs" />
         <StatCard value={filtered.filter((a) => a.certificate).length} label="Certificates" />
       </div>
-      <p className="-mt-4 text-xs text-slate-500 dark:text-slate-400">
+      <p className="-mt-4 text-xs text-stone-500 dark:text-stone-400">
         Totals reflect activities with verified duration information.
       </p>
 

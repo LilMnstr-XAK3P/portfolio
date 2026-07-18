@@ -19,7 +19,7 @@ export function AboutPage() {
       {/* Biography */}
       <section aria-labelledby="bio-heading">
         <SectionHeading id="bio-heading" as="h1" title="About" />
-        <div className="max-w-3xl space-y-4 leading-relaxed text-slate-700 dark:text-slate-300">
+        <div className="max-w-3xl space-y-4 leading-relaxed text-stone-700 dark:text-stone-300">
           {profile.bio.split('\n\n').map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
@@ -40,20 +40,20 @@ export function AboutPage() {
                   <GraduationCap className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white">{entry.degree}</h3>
+                  <h3 className="font-semibold text-stone-900 dark:text-white">{entry.degree}</h3>
                   {entry.specialization && (
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                    <p className="text-sm text-stone-600 dark:text-stone-400">
                       {entry.specialization}
                     </p>
                   )}
-                  <p className="mt-0.5 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  <p className="mt-0.5 text-sm font-medium text-stone-700 dark:text-stone-300">
                     {entry.institution}
                   </p>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">
+                  <p className="text-sm text-stone-500 dark:text-stone-400">
                     {[entry.status, entry.year, entry.expected].filter(Boolean).join(' · ')}
                   </p>
                   {entry.notes?.map((note) => (
-                    <p key={note} className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                    <p key={note} className="mt-1 text-sm text-stone-500 dark:text-stone-400">
                       {note}
                     </p>
                   ))}
@@ -67,8 +67,8 @@ export function AboutPage() {
                     </ul>
                   )}
                   {entry.capstone && (
-                    <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-                      <span className="font-medium text-slate-700 dark:text-slate-300">
+                    <p className="mt-2 text-sm text-stone-600 dark:text-stone-400">
+                      <span className="font-medium text-stone-700 dark:text-stone-300">
                         Capstone:
                       </span>{' '}
                       {entry.capstone}
@@ -93,21 +93,21 @@ export function AboutPage() {
                 </div>
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                    <h3 className="font-semibold text-slate-900 dark:text-white">{entry.role}</h3>
-                    <p className="shrink-0 text-sm font-medium text-slate-500 dark:text-slate-400">
+                    <h3 className="font-semibold text-stone-900 dark:text-white">{entry.role}</h3>
+                    <p className="shrink-0 text-sm font-medium text-stone-500 dark:text-stone-400">
                       {entry.period}
                     </p>
                   </div>
-                  <p className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                  <p className="text-sm font-medium text-stone-700 dark:text-stone-300">
                     {[entry.organization, entry.location].filter(Boolean).join(' — ')}
                   </p>
                   {entry.summary && (
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                    <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                       {entry.summary}
                     </p>
                   )}
                   {entry.details && (
-                    <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-600 dark:text-slate-400">
+                    <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-stone-600 dark:text-stone-400">
                       {entry.details.map((d) => (
                         <li key={d}>{d}</li>
                       ))}
@@ -123,16 +123,16 @@ export function AboutPage() {
       {/* Philosophies */}
       <section aria-labelledby="philosophy-heading" className="grid gap-4 md:grid-cols-2">
         <div className="card p-6">
-          <h2 id="philosophy-heading" className="text-xl font-bold text-slate-900 dark:text-white">
+          <h2 id="philosophy-heading" className="text-xl font-bold text-stone-900 dark:text-white">
             Professional Philosophy
           </h2>
-          <p className="mt-3 leading-relaxed text-slate-700 dark:text-slate-300">
+          <p className="mt-3 leading-relaxed text-stone-700 dark:text-stone-300">
             {profile.professionalPhilosophy}
           </p>
         </div>
         <div className="card p-6">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-white">Teaching Philosophy</h2>
-          <p className="mt-3 leading-relaxed text-slate-700 dark:text-slate-300">
+          <h2 className="text-xl font-bold text-stone-900 dark:text-white">Teaching Philosophy</h2>
+          <p className="mt-3 leading-relaxed text-stone-700 dark:text-stone-300">
             {profile.teachingPhilosophy}
           </p>
         </div>
@@ -156,7 +156,7 @@ export function AboutPage() {
         <div className="grid gap-4 md:grid-cols-2">
           {publicOnly(skillGroups).map((group) => (
             <article key={group.id} className="card p-5">
-              <h3 className="font-semibold text-slate-900 dark:text-white">{group.title}</h3>
+              <h3 className="font-semibold text-stone-900 dark:text-white">{group.title}</h3>
               <ul className="mt-3 flex flex-wrap gap-1.5">
                 {group.skills.map((skill) => (
                   <li key={skill}>
@@ -172,7 +172,7 @@ export function AboutPage() {
       {/* Affiliations */}
       <section aria-labelledby="affiliations-heading">
         <SectionHeading id="affiliations-heading" title="Professional Affiliations" />
-        <ul className="card list-inside list-disc space-y-2 p-6 text-slate-700 dark:text-slate-300">
+        <ul className="card list-inside list-disc space-y-2 p-6 text-stone-700 dark:text-stone-300">
           {profile.affiliations.map((affiliation) => (
             <li key={affiliation}>{affiliation}</li>
           ))}

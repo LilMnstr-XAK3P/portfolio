@@ -8,8 +8,8 @@ interface TagChipProps {
 export function TagChip({ label, active, onClick }: TagChipProps) {
   const base = 'inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium';
   const style = active
-    ? 'bg-brand-700 text-white dark:bg-brand-500 dark:text-slate-950'
-    : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300';
+    ? 'bg-brand-700 text-white dark:bg-brand-500 dark:text-stone-950'
+    : 'bg-stone-100 text-stone-700 dark:bg-stone-800 dark:text-stone-300';
 
   if (onClick) {
     return (
@@ -17,7 +17,7 @@ export function TagChip({ label, active, onClick }: TagChipProps) {
         type="button"
         onClick={onClick}
         aria-pressed={active}
-        className={`${base} ${style} transition-colors hover:bg-slate-200 dark:hover:bg-slate-700`}
+        className={`${base} ${style} transition-colors hover:bg-stone-200 dark:hover:bg-stone-700`}
       >
         {label}
       </button>

@@ -32,11 +32,7 @@ export function DownloadButton({ path, label }: DownloadButtonProps) {
 
   if (state === 'available') {
     return (
-      <a
-        href={href}
-        download
-        className="inline-flex items-center gap-2 rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-800 dark:bg-brand-600 dark:hover:bg-brand-500"
-      >
+      <a href={href} download className="btn-primary">
         <Download className="h-4 w-4" aria-hidden="true" />
         {label}
       </a>
@@ -49,13 +45,13 @@ export function DownloadButton({ path, label }: DownloadButtonProps) {
         type="button"
         disabled
         aria-disabled="true"
-        className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg bg-slate-200 px-4 py-2 text-sm font-semibold text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+        className="inline-flex cursor-not-allowed items-center gap-2 rounded-full bg-stone-200 px-5 py-2.5 text-sm font-semibold text-stone-500 dark:bg-stone-800 dark:text-stone-400"
       >
         <Download className="h-4 w-4" aria-hidden="true" />
         {label}
       </button>
       {state === 'missing' && (
-        <span className="text-xs text-slate-500 dark:text-slate-400">
+        <span className="text-xs text-stone-500 dark:text-stone-400">
           Updated CV will be available soon.
         </span>
       )}

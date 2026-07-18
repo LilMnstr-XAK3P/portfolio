@@ -26,7 +26,7 @@ export function HomePage() {
 
       {/* Introduction */}
       <section className="container-content py-12">
-        <p className="mx-auto max-w-3xl text-center text-lg leading-relaxed text-slate-700 dark:text-slate-300">
+        <p className="mx-auto max-w-3xl text-center text-lg leading-relaxed text-stone-700 dark:text-stone-300">
           {profile.introSummary}
         </p>
       </section>
@@ -39,12 +39,13 @@ export function HomePage() {
           subtitle="Depth across cybersecurity practice, curriculum leadership, and responsible AI integration."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {expertiseAreas.map((area) => (
+          {expertiseAreas.map((area, i) => (
             <ExpertiseCard
               key={area.id}
               title={area.title}
               description={area.description}
               icon={area.icon}
+              index={i}
             />
           ))}
         </div>
@@ -52,7 +53,7 @@ export function HomePage() {
 
       {/* Featured contributions */}
       <section
-        className="border-y border-slate-200 bg-slate-50 py-12 dark:border-slate-800 dark:bg-slate-900/40"
+        className="border-y border-stone-200 bg-stone-100/60 py-12 dark:border-stone-800 dark:bg-stone-900/40"
         aria-labelledby="featured-heading"
       >
         <div className="container-content">
@@ -67,8 +68,8 @@ export function HomePage() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-400">
                   {item.category}
                 </p>
-                <h3 className="mt-1 font-semibold text-slate-900 dark:text-white">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                <h3 className="mt-1 font-semibold text-stone-900 dark:text-white">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                   {item.summary}
                 </p>
               </article>
@@ -77,10 +78,10 @@ export function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-400">
                 Student Success
               </p>
-              <h3 className="mt-1 font-semibold text-slate-900 dark:text-white">
+              <h3 className="mt-1 font-semibold text-stone-900 dark:text-white">
                 National Cyber League Coaching
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                 Coached the CSN CTF Squad through the Spring 2026 National Cyber League season: team
                 placement 44th nationally and college placement 59th nationally, among approximately
                 500 colleges and universities.
@@ -90,10 +91,10 @@ export function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-400">
                 Curriculum Leadership
               </p>
-              <h3 className="mt-1 font-semibold text-slate-900 dark:text-white">
+              <h3 className="mt-1 font-semibold text-stone-900 dark:text-white">
                 CSN Cybersecurity Degree Redesign
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                 Led the redesign of two AAS degrees, introducing specialization pathways in cloud
                 security, digital forensics, offensive security, compliance, and artificial
                 intelligence.
@@ -103,10 +104,10 @@ export function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-400">
                 Workforce Alignment
               </p>
-              <h3 className="mt-1 font-semibold text-slate-900 dark:text-white">
+              <h3 className="mt-1 font-semibold text-stone-900 dark:text-white">
                 Industry & CTE Pathway Collaboration
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                 Industry advisory participation and high-school-to-college pathway alignment
                 connecting CSN programs to regional workforce needs.
               </p>
@@ -143,7 +144,7 @@ export function HomePage() {
           <StatCard value={stats.aiPdActivities} label="AI-focused training activities" />
           <StatCard value={stats.competitionPlacements} label="National competition placements" />
         </div>
-        <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
+        <p className="mt-3 text-xs text-stone-500 dark:text-stone-400">
           Totals reflect activities with verified duration information.
         </p>
       </section>
@@ -155,21 +156,21 @@ export function HomePage() {
           title="Recent Activity"
           subtitle="The five most recent professional-development and contribution activities."
         />
-        <ol className="card divide-y divide-slate-100 dark:divide-slate-800">
+        <ol className="card divide-y divide-stone-100 dark:divide-stone-800">
           {recent.map((activity) => (
             <li
               key={activity.id}
               className="flex flex-col gap-1 p-4 sm:flex-row sm:items-baseline sm:justify-between"
             >
               <div>
-                <p className="font-medium text-slate-900 dark:text-white">{activity.title}</p>
-                <p className="text-sm text-slate-500 dark:text-slate-400">
+                <p className="font-medium text-stone-900 dark:text-white">{activity.title}</p>
+                <p className="text-sm text-stone-500 dark:text-stone-400">
                   {[activity.provider ?? activity.organization, activity.category]
                     .filter(Boolean)
                     .join(' · ')}
                 </p>
               </div>
-              <p className="shrink-0 text-sm text-slate-500 dark:text-slate-400">
+              <p className="shrink-0 text-sm text-stone-500 dark:text-stone-400">
                 {activity.displayDate}
               </p>
             </li>

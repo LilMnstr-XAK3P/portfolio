@@ -8,18 +8,19 @@ export default {
         sans: ['"Inter Variable"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        // Academic navy + teal accent. Adjust here to rebrand the whole site.
+        // Warm paper aesthetic: stone neutrals + muted green accent.
+        // Adjust here to rebrand the whole site.
         brand: {
-          50: '#f0fdfa',
-          100: '#ccfbf1',
-          200: '#99f6e4',
-          300: '#5eead4',
-          400: '#2dd4bf',
-          500: '#14b8a6',
-          600: '#0d9488',
-          700: '#0f766e',
-          800: '#115e59',
-          900: '#134e4a',
+          50: '#f0f7f2',
+          100: '#dcefe3',
+          200: '#bbdfc9',
+          300: '#8ec7a6',
+          400: '#5da97f',
+          500: '#3d8d62',
+          600: '#2b724d',
+          700: '#235c40',
+          800: '#1e4a35',
+          900: '#1a3d2d',
         },
       },
       maxWidth: {

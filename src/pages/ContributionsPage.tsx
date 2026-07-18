@@ -58,19 +58,19 @@ export function ContributionsPage() {
           title="Institutional Service"
           subtitle="Ongoing service and governance roles at the College of Southern Nevada."
         />
-        <ul className="card divide-y divide-slate-100 dark:divide-slate-800">
+        <ul className="card divide-y divide-stone-100 dark:divide-stone-800">
           {publicOnly(serviceRoles).map((role) => (
             <li
               key={role.id}
               className="flex flex-col gap-1 p-4 sm:flex-row sm:items-baseline sm:justify-between"
             >
               <div>
-                <p className="font-medium text-slate-900 dark:text-white">{role.role}</p>
+                <p className="font-medium text-stone-900 dark:text-white">{role.role}</p>
                 {role.description && (
-                  <p className="text-sm text-slate-500 dark:text-slate-400">{role.description}</p>
+                  <p className="text-sm text-stone-500 dark:text-stone-400">{role.description}</p>
                 )}
               </div>
-              <p className="shrink-0 text-sm font-medium text-slate-500 dark:text-slate-400">
+              <p className="shrink-0 text-sm font-medium text-stone-500 dark:text-stone-400">
                 {role.period}
               </p>
             </li>

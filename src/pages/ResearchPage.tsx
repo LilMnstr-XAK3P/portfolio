@@ -48,7 +48,7 @@ export function ResearchPage() {
         />
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {doctoralPreparation.map((area) => (
-            <li key={area} className="card p-4 font-medium text-slate-800 dark:text-slate-200">
+            <li key={area} className="card p-4 font-medium text-stone-800 dark:text-stone-200">
               {area}
             </li>
           ))}
@@ -68,10 +68,10 @@ export function ResearchPage() {
               {currentResearch.label}
             </span>
           </div>
-          <h3 className="mt-3 text-lg font-semibold text-slate-900 dark:text-white">
+          <h3 className="mt-3 text-lg font-semibold text-stone-900 dark:text-white">
             {currentResearch.title}
           </h3>
-          <p className="mt-2 leading-relaxed text-slate-700 dark:text-slate-300">
+          <p className="mt-2 leading-relaxed text-stone-700 dark:text-stone-300">
             {currentResearch.description}
           </p>
         </article>
@@ -103,7 +103,7 @@ export function ResearchPage() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-400">
                   {work.kind.replace('-', ' ')}
                 </p>
-                <h3 className="mt-1 font-semibold text-slate-900 dark:text-white">
+                <h3 className="mt-1 font-semibold text-stone-900 dark:text-white">
                   {work.url ? (
                     <a href={work.url} className="link" target="_blank" rel="noopener noreferrer">
                       {work.title}
@@ -112,7 +112,7 @@ export function ResearchPage() {
                     work.title
                   )}
                 </h3>
-                <p className="text-sm text-slate-500 dark:text-slate-400">
+                <p className="text-sm text-stone-500 dark:text-stone-400">
                   {[work.venue, work.date, work.status].filter(Boolean).join(' · ')}
                 </p>
               </li>

@@ -36,7 +36,7 @@ export function TeachingPage() {
             if (groupCourses.length === 0) return null;
             return (
               <div key={group}>
-                <h3 className="mb-3 text-lg font-semibold text-slate-800 dark:text-slate-200">
+                <h3 className="mb-3 text-lg font-semibold text-stone-800 dark:text-stone-200">
                   {group}
                 </h3>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -65,9 +65,9 @@ export function TeachingPage() {
                 aria-hidden="true"
               />
               <div>
-                <p className="font-medium text-slate-900 dark:text-white">{course.title}</p>
+                <p className="font-medium text-stone-900 dark:text-white">{course.title}</p>
                 {course.description && (
-                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+                  <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
                     {course.description}
                   </p>
                 )}
@@ -91,7 +91,7 @@ export function TeachingPage() {
                 className="mt-0.5 h-5 w-5 shrink-0 text-brand-600 dark:text-brand-400"
                 aria-hidden="true"
               />
-              <p className="font-medium text-slate-900 dark:text-white">{course.title}</p>
+              <p className="font-medium text-stone-900 dark:text-white">{course.title}</p>
             </li>
           ))}
         </ul>
@@ -107,14 +107,14 @@ export function TeachingPage() {
         <div className="grid gap-4 md:grid-cols-2">
           {publicOnly(programRedesigns).map((program) => (
             <article key={program.id} className="card p-5">
-              <h3 className="font-semibold text-slate-900 dark:text-white">{program.title}</h3>
+              <h3 className="font-semibold text-stone-900 dark:text-white">{program.title}</h3>
               {program.description && (
-                <p className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                <p className="mt-2 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
                   {program.description}
                 </p>
               )}
               {program.details && (
-                <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-slate-600 dark:text-slate-400">
+                <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-stone-600 dark:text-stone-400">
                   {program.details.map((detail) => (
                     <li key={detail}>{detail}</li>
                   ))}
@@ -136,10 +136,10 @@ export function TeachingPage() {
           {teachingInnovations.map((innovation) => (
             <article key={innovation.id} className="card p-5">
               <Sparkles className="h-5 w-5 text-brand-600 dark:text-brand-400" aria-hidden="true" />
-              <h3 className="mt-2 font-semibold text-slate-900 dark:text-white">
+              <h3 className="mt-2 font-semibold text-stone-900 dark:text-white">
                 {innovation.title}
               </h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="mt-1.5 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                 {innovation.description}
               </p>
             </article>

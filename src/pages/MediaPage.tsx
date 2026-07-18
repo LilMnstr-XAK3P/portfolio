@@ -29,7 +29,7 @@ export function MediaPage() {
       {featured && (
         <section aria-labelledby="featured-media-heading">
           <article className="card overflow-hidden">
-            <div className="border-b border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-900/60">
+            <div className="border-b border-stone-200 bg-stone-50 p-6 dark:border-stone-800 dark:bg-stone-900/60">
               <div className="flex items-center gap-3">
                 <div className="rounded-lg bg-brand-50 p-2.5 text-brand-700 dark:bg-brand-900/40 dark:text-brand-400">
                   <Tv className="h-6 w-6" aria-hidden="true" />
@@ -37,11 +37,11 @@ export function MediaPage() {
                 <div>
                   <h2
                     id="featured-media-heading"
-                    className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+                    className="text-2xl font-bold tracking-tight text-stone-900 dark:text-white"
                   >
                     {featured.title}
                   </h2>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                  <p className="text-sm text-stone-600 dark:text-stone-400">
                     {featured.outlet}
                     {featured.host ? ` · Hosted by ${featured.host}` : ''}
                   </p>
@@ -49,17 +49,17 @@ export function MediaPage() {
               </div>
             </div>
             <div className="space-y-4 p-6">
-              <p className="inline-flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400">
+              <p className="inline-flex items-center gap-1.5 text-sm text-stone-500 dark:text-stone-400">
                 <CalendarDays className="h-4 w-4" aria-hidden="true" />
                 {featured.displayDate}
               </p>
-              <p className="max-w-3xl leading-relaxed text-slate-700 dark:text-slate-300">
+              <p className="max-w-3xl leading-relaxed text-stone-700 dark:text-stone-300">
                 {featured.summary}
               </p>
               {featured.topics && (
                 <div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white">Topics</h3>
-                  <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-600 dark:text-slate-400">
+                  <h3 className="font-semibold text-stone-900 dark:text-white">Topics</h3>
+                  <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-stone-600 dark:text-stone-400">
                     {featured.topics.map((topic) => (
                       <li key={topic}>{topic}</li>
                     ))}
@@ -81,7 +81,7 @@ export function MediaPage() {
                 <Newspaper className="h-3.5 w-3.5" aria-hidden="true" />
                 {item.kind}
               </p>
-              <h3 className="mt-1.5 font-semibold text-slate-900 dark:text-white">
+              <h3 className="mt-1.5 font-semibold text-stone-900 dark:text-white">
                 {item.url ? (
                   <ExternalLink href={item.url} className="hover:underline">
                     {item.title}
@@ -90,7 +90,7 @@ export function MediaPage() {
                   item.title
                 )}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                 {item.summary}
               </p>
               {item.url && (

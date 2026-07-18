@@ -26,7 +26,7 @@ export function StudentSuccessPage() {
       {/* CTF Squad */}
       <section aria-labelledby="ctf-heading">
         <div className="card overflow-hidden">
-          <div className="border-b border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-900/60">
+          <div className="border-b border-stone-200 bg-stone-50 p-6 dark:border-stone-800 dark:bg-stone-900/60">
             <div className="flex items-center gap-3">
               <div className="rounded-lg bg-brand-50 p-2.5 text-brand-700 dark:bg-brand-900/40 dark:text-brand-400">
                 <Flag className="h-6 w-6" aria-hidden="true" />
@@ -34,35 +34,35 @@ export function StudentSuccessPage() {
               <div>
                 <h2
                   id="ctf-heading"
-                  className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+                  className="text-2xl font-bold tracking-tight text-stone-900 dark:text-white"
                 >
                   {ctfSquad.name}
                 </h2>
-                <p className="text-sm font-medium text-slate-600 dark:text-slate-400">
+                <p className="text-sm font-medium text-stone-600 dark:text-stone-400">
                   {ctfSquad.role}
                 </p>
               </div>
             </div>
           </div>
           <div className="space-y-5 p-6">
-            <p className="max-w-3xl leading-relaxed text-slate-700 dark:text-slate-300">
+            <p className="max-w-3xl leading-relaxed text-stone-700 dark:text-stone-300">
               {ctfSquad.description}
             </p>
 
             <div>
-              <h3 className="font-semibold text-slate-900 dark:text-white">
+              <h3 className="font-semibold text-stone-900 dark:text-white">
                 {ctfSquad.season} — Verified Results
               </h3>
               <ul className="mt-3 grid gap-3 sm:grid-cols-2">
                 {results.map((result) => (
                   <li
                     key={result.id}
-                    className="flex items-start gap-3 rounded-lg border border-slate-200 p-4 dark:border-slate-800"
+                    className="flex items-start gap-3 rounded-lg border border-stone-200 p-4 dark:border-stone-800"
                   >
                     <Trophy className="mt-0.5 h-5 w-5 shrink-0 text-amber-500" aria-hidden="true" />
                     <div>
-                      <p className="font-medium text-slate-900 dark:text-white">{result.title}</p>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">{result.detail}</p>
+                      <p className="font-medium text-stone-900 dark:text-white">{result.title}</p>
+                      <p className="text-sm text-stone-600 dark:text-stone-400">{result.detail}</p>
                     </div>
                   </li>
                 ))}
@@ -70,7 +70,7 @@ export function StudentSuccessPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-slate-900 dark:text-white">
+              <h3 className="font-semibold text-stone-900 dark:text-white">
                 Competition Skill Areas
               </h3>
               <ul className="mt-3 flex flex-wrap gap-2">
@@ -112,8 +112,8 @@ export function StudentSuccessPage() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {engagements.map((engagement) => (
               <article key={engagement.id} className="card p-5">
-                <h3 className="font-semibold text-slate-900 dark:text-white">{engagement.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                <h3 className="font-semibold text-stone-900 dark:text-white">{engagement.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                   {engagement.description}
                 </p>
               </article>

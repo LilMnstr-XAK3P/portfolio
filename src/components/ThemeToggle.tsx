@@ -14,7 +14,7 @@ export function ThemeToggle() {
     <div
       role="group"
       aria-label="Theme"
-      className="flex items-center gap-0.5 rounded-full border border-slate-200 p-0.5 dark:border-slate-700"
+      className="flex items-center gap-0.5 rounded-full border border-stone-200 p-0.5 dark:border-stone-700"
     >
       {options.map(({ value, label, Icon }) => (
         <button
@@ -26,8 +26,8 @@ export function ThemeToggle() {
           title={label}
           className={`rounded-full p-1.5 transition-colors ${
             theme === value
-              ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900'
-              : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100'
+              ? 'bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900'
+              : 'text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100'
           }`}
         >
           <Icon className="h-4 w-4" aria-hidden="true" />

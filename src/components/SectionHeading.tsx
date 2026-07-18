@@ -20,13 +20,13 @@ export function SectionHeading({
     <div className="mb-6">
       <Tag
         id={id}
-        className={`font-bold tracking-tight text-slate-900 dark:text-white ${
+        className={`font-bold tracking-tight text-stone-900 dark:text-white ${
           Tag === 'h1' ? 'text-3xl sm:text-4xl' : Tag === 'h2' ? 'text-2xl sm:text-3xl' : 'text-xl'
         }`}
       >
         {title}
       </Tag>
-      {subtitle && <p className="mt-2 max-w-3xl text-slate-600 dark:text-slate-400">{subtitle}</p>}
+      {subtitle && <p className="mt-2 max-w-3xl text-stone-600 dark:text-stone-400">{subtitle}</p>}
       {children}
     </div>
   );

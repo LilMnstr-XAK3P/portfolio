@@ -48,8 +48,8 @@ function Entry({
   return (
     <div className="py-2">
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-        <p className="font-medium text-slate-900 dark:text-white">{heading}</p>
-        {meta && <p className="shrink-0 text-sm text-slate-500 dark:text-slate-400">{meta}</p>}
+        <p className="font-medium text-stone-900 dark:text-white">{heading}</p>
+        {meta && <p className="shrink-0 text-sm text-stone-500 dark:text-stone-400">{meta}</p>}
       </div>
       {children}
     </div>
@@ -63,16 +63,16 @@ function buildSections(): CVSection[] {
       title: 'Education',
       areas: ['Grant CV', 'AI and Emerging Technology', 'Cybersecurity Education'],
       content: (
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+        <div className="divide-y divide-stone-100 dark:divide-stone-800">
           {publicOnly(education).map((entry) => (
             <Entry
               key={entry.id}
               heading={`${entry.degree}${entry.specialization ? ` — ${entry.specialization}` : ''}`}
               meta={entry.year ?? entry.expected ?? entry.status}
             >
-              <p className="text-sm text-slate-600 dark:text-slate-400">{entry.institution}</p>
+              <p className="text-sm text-stone-600 dark:text-stone-400">{entry.institution}</p>
               {entry.capstone && (
-                <p className="text-sm text-slate-500 dark:text-slate-400">
+                <p className="text-sm text-stone-500 dark:text-stone-400">
                   Capstone: {entry.capstone}
                 </p>
               )}
@@ -86,14 +86,14 @@ function buildSections(): CVSection[] {
       title: 'Professional Experience',
       areas: ['Grant CV', 'Cybersecurity Education', 'Professional Service'],
       content: (
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+        <div className="divide-y divide-stone-100 dark:divide-stone-800">
           {publicOnly(experience).map((entry) => (
             <Entry key={entry.id} heading={entry.role} meta={entry.period}>
-              <p className="text-sm text-slate-600 dark:text-slate-400">
+              <p className="text-sm text-stone-600 dark:text-stone-400">
                 {[entry.organization, entry.location].filter(Boolean).join(' — ')}
               </p>
               {entry.summary && (
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{entry.summary}</p>
+                <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">{entry.summary}</p>
               )}
             </Entry>
           ))}
@@ -111,10 +111,10 @@ function buildSections(): CVSection[] {
             if (courses.length === 0) return null;
             return (
               <div key={group}>
-                <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
                   {group}
                 </p>
-                <div className="divide-y divide-slate-100 dark:divide-slate-800">
+                <div className="divide-y divide-stone-100 dark:divide-stone-800">
                   {courses.map((course) => (
                     <Entry
                       key={course.id}
@@ -141,14 +141,14 @@ function buildSections(): CVSection[] {
       content: (
         <div className="space-y-4">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
               Program & Degree Redesign
             </p>
-            <div className="divide-y divide-slate-100 dark:divide-slate-800">
+            <div className="divide-y divide-stone-100 dark:divide-stone-800">
               {publicOnly(programRedesigns).map((item) => (
                 <Entry key={item.id} heading={item.title}>
                   {item.details && (
-                    <ul className="mt-1 list-inside list-disc text-sm text-slate-600 dark:text-slate-400">
+                    <ul className="mt-1 list-inside list-disc text-sm text-stone-600 dark:text-stone-400">
                       {item.details.map((d) => (
                         <li key={d}>{d}</li>
                       ))}
@@ -159,20 +159,20 @@ function buildSections(): CVSection[] {
             </div>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
               New Courses Created
             </p>
-            <ul className="mt-1 list-inside list-disc text-sm text-slate-700 dark:text-slate-300">
+            <ul className="mt-1 list-inside list-disc text-sm text-stone-700 dark:text-stone-300">
               {publicOnly(newCourses).map((c) => (
                 <li key={c.id}>{c.title}</li>
               ))}
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
               Major Course Redesigns
             </p>
-            <ul className="mt-1 list-inside list-disc text-sm text-slate-700 dark:text-slate-300">
+            <ul className="mt-1 list-inside list-disc text-sm text-stone-700 dark:text-stone-300">
               {publicOnly(courseRedesigns).map((c) => (
                 <li key={c.id}>{c.title}</li>
               ))}
@@ -191,11 +191,11 @@ function buildSections(): CVSection[] {
         'Professional Service',
       ],
       content: (
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+        <div className="divide-y divide-stone-100 dark:divide-stone-800">
           {sortByDateDesc(publicOnly(contributions)).map((c) => (
             <Entry key={c.id} heading={c.title} meta={c.displayDate}>
-              <p className="text-sm text-slate-600 dark:text-slate-400">{c.organization}</p>
-              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{c.summary}</p>
+              <p className="text-sm text-stone-600 dark:text-stone-400">{c.organization}</p>
+              <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">{c.summary}</p>
             </Entry>
           ))}
         </div>
@@ -208,12 +208,12 @@ function buildSections(): CVSection[] {
       content: (
         <div className="space-y-3">
           <Entry heading={`${currentResearch.title} (${currentResearch.label})`}>
-            <p className="text-sm text-slate-600 dark:text-slate-400">
+            <p className="text-sm text-stone-600 dark:text-stone-400">
               {currentResearch.description}
             </p>
           </Entry>
-          <p className="text-sm text-slate-600 dark:text-slate-400">
-            <span className="font-medium text-slate-700 dark:text-slate-300">
+          <p className="text-sm text-stone-600 dark:text-stone-400">
+            <span className="font-medium text-stone-700 dark:text-stone-300">
               Research interests:
             </span>{' '}
             {researchInterests.join('; ')}
@@ -226,14 +226,14 @@ function buildSections(): CVSection[] {
       title: 'Professional Development',
       areas: ['Grant CV', 'AI and Emerging Technology', 'Cybersecurity Education'],
       content: (
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+        <div className="divide-y divide-stone-100 dark:divide-stone-800">
           {sortByDateDesc(publicOnly(professionalDevelopment)).map((a) => (
             <Entry
               key={a.id}
               heading={a.cvEntry ?? a.title}
               meta={`${a.displayDate}${typeof a.hours === 'number' ? ` · ${a.hours} hr` : ''}`}
             >
-              <p className="text-sm text-slate-600 dark:text-slate-400">
+              <p className="text-sm text-stone-600 dark:text-stone-400">
                 {[a.provider ?? a.organization, a.category].filter(Boolean).join(' · ')}
               </p>
             </Entry>
@@ -248,8 +248,8 @@ function buildSections(): CVSection[] {
       content: (
         <div className="space-y-2">
           <Entry heading={`${ctfSquad.name} — ${ctfSquad.role}`} meta={ctfSquad.season}>
-            <p className="text-sm text-slate-600 dark:text-slate-400">{ctfSquad.description}</p>
-            <ul className="mt-1 list-inside list-disc text-sm text-slate-600 dark:text-slate-400">
+            <p className="text-sm text-stone-600 dark:text-stone-400">{ctfSquad.description}</p>
+            <ul className="mt-1 list-inside list-disc text-sm text-stone-600 dark:text-stone-400">
               {publicOnly(competitionResults)
                 .filter((r) => r.verified)
                 .map((r) => (
@@ -266,16 +266,16 @@ function buildSections(): CVSection[] {
       areas: ['Professional Service', 'Grant CV'],
       content: (
         <div className="space-y-4">
-          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+          <div className="divide-y divide-stone-100 dark:divide-stone-800">
             {publicOnly(serviceRoles).map((role) => (
               <Entry key={role.id} heading={role.role} meta={role.period} />
             ))}
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+            <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
               Volunteer Experience
             </p>
-            <div className="divide-y divide-slate-100 dark:divide-slate-800">
+            <div className="divide-y divide-stone-100 dark:divide-stone-800">
               {publicOnly(volunteerRoles).map((v) => (
                 <Entry key={v.id} heading={v.organization} meta={v.period} />
               ))}
@@ -289,10 +289,10 @@ function buildSections(): CVSection[] {
       title: 'Media & Outreach',
       areas: ['Student Success', 'Professional Service'],
       content: (
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+        <div className="divide-y divide-stone-100 dark:divide-stone-800">
           {sortByDateDesc(publicOnly(mediaItems)).map((m) => (
             <Entry key={m.id} heading={m.title} meta={m.displayDate}>
-              <p className="text-sm text-slate-600 dark:text-slate-400">
+              <p className="text-sm text-stone-600 dark:text-stone-400">
                 {[m.kind, m.outlet].filter(Boolean).join(' · ')}
               </p>
             </Entry>
@@ -339,11 +339,7 @@ export function CVPage() {
             onChange={(v) => setFilter(v || 'Full Academic CV')}
             allLabel="Full Academic CV"
           />
-          <button
-            type="button"
-            onClick={() => window.print()}
-            className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
-          >
+          <button type="button" onClick={() => window.print()} className="btn-secondary">
             <Printer className="h-4 w-4" aria-hidden="true" />
             Print
           </button>
@@ -369,7 +365,7 @@ export function CVPage() {
               <li key={section.id}>
                 <a
                   href={`#cv-${section.id}`}
-                  className="block rounded-md px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white"
+                  className="block rounded-md px-3 py-1.5 text-stone-600 hover:bg-stone-100 hover:text-stone-900 dark:text-stone-400 dark:hover:bg-stone-800 dark:hover:text-white"
                 >
                   {section.title}
                 </a>
@@ -390,13 +386,13 @@ export function CVPage() {
                     onClick={() => toggle(section.id)}
                     aria-expanded={!isCollapsed}
                     aria-controls={`cv-panel-${section.id}`}
-                    className="no-print flex w-full items-center justify-between gap-3 p-5 text-left text-lg font-bold text-slate-900 dark:text-white"
+                    className="no-print flex w-full items-center justify-between gap-3 p-5 text-left text-lg font-bold text-stone-900 dark:text-white"
                   >
                     {section.title}
                     {isCollapsed ? (
-                      <ChevronDown className="h-5 w-5 text-slate-400" aria-hidden="true" />
+                      <ChevronDown className="h-5 w-5 text-stone-400" aria-hidden="true" />
                     ) : (
-                      <ChevronUp className="h-5 w-5 text-slate-400" aria-hidden="true" />
+                      <ChevronUp className="h-5 w-5 text-stone-400" aria-hidden="true" />
                     )}
                   </button>
                   <span className="hidden p-5 pb-0 text-lg font-bold print:block">

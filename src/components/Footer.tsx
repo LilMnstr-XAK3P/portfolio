@@ -8,15 +8,15 @@ export function Footer() {
   const activeSocial = socialLinks.filter((s) => s.url);
 
   return (
-    <footer className="no-print border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/50">
+    <footer className="no-print border-t border-stone-200 bg-stone-100/70 dark:border-stone-800 dark:bg-stone-900/50">
       <div className="container-content grid gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3">
         <div>
-          <p className="font-semibold text-slate-900 dark:text-white">{profile.name}</p>
-          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{profile.primaryTitle}</p>
-          <p className="text-sm text-slate-600 dark:text-slate-400">{profile.institution}</p>
+          <p className="font-semibold text-stone-900 dark:text-white">{profile.name}</p>
+          <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">{profile.primaryTitle}</p>
+          <p className="text-sm text-stone-600 dark:text-stone-400">{profile.institution}</p>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+          <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
             Contact
           </p>
           <ul className="mt-2 space-y-1 text-sm">
@@ -34,7 +34,7 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+          <p className="text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
             Profiles
           </p>
           <ul className="mt-2 space-y-1 text-sm">
@@ -48,8 +48,8 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-slate-200 dark:border-slate-800">
-        <div className="container-content flex flex-col gap-2 py-4 text-xs text-slate-500 dark:text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div className="border-t border-stone-200 dark:border-stone-800">
+        <div className="container-content flex flex-col gap-2 py-4 text-xs text-stone-500 dark:text-stone-400 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {profile.shortName}. Content maintained in{' '}
             <ExternalLink href={siteConfig.repoUrl} className="link">

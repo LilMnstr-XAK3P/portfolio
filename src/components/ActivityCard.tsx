@@ -12,8 +12,8 @@ export function ActivityCard({ activity }: ActivityCardProps) {
     <article className="card p-5">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
-          <h3 className="font-semibold text-slate-900 dark:text-white">{activity.title}</h3>
-          <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400">
+          <h3 className="font-semibold text-stone-900 dark:text-white">{activity.title}</h3>
+          <p className="mt-0.5 text-sm text-stone-600 dark:text-stone-400">
             {[activity.provider ?? activity.organization, activity.format]
               .filter(Boolean)
               .join(' · ')}
@@ -24,11 +24,11 @@ export function ActivityCard({ activity }: ActivityCardProps) {
         </span>
       </div>
 
-      <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+      <p className="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
         {activity.summary}
       </p>
 
-      <dl className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
+      <dl className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-500 dark:text-stone-400">
         <div className="inline-flex items-center gap-1">
           <CalendarDays className="h-3.5 w-3.5" aria-hidden="true" />
           <dt className="sr-only">Date</dt>

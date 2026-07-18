@@ -37,12 +37,12 @@ export function AILeadershipPage() {
           </div>
           <h2
             id="ai-curriculum-heading"
-            className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+            className="text-2xl font-bold tracking-tight text-stone-900 dark:text-white"
           >
             {aiCurriculumEvaluation.title}
           </h2>
         </div>
-        <p className="max-w-3xl text-slate-700 dark:text-slate-300">
+        <p className="max-w-3xl text-stone-700 dark:text-stone-300">
           {aiCurriculumEvaluation.description}
         </p>
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -67,17 +67,17 @@ export function AILeadershipPage() {
           </div>
           <h2
             id="ai-facdev-heading"
-            className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+            className="text-2xl font-bold tracking-tight text-stone-900 dark:text-white"
           >
             {aiFacultyDevelopment.title}
           </h2>
         </div>
-        <p className="max-w-3xl text-slate-700 dark:text-slate-300">
+        <p className="max-w-3xl text-stone-700 dark:text-stone-300">
           {aiFacultyDevelopment.description}
         </p>
         <ul className="mt-5 grid gap-3 sm:grid-cols-2">
           {aiFacultyDevelopment.activities.map((activity) => (
-            <li key={activity} className="card p-4 font-medium text-slate-800 dark:text-slate-200">
+            <li key={activity} className="card p-4 font-medium text-stone-800 dark:text-stone-200">
               {activity}
             </li>
           ))}
@@ -92,7 +92,7 @@ export function AILeadershipPage() {
           </div>
           <h2
             id="ai-competencies-heading"
-            className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+            className="text-2xl font-bold tracking-tight text-stone-900 dark:text-white"
           >
             {aiCompetencies.title}
           </h2>
@@ -100,7 +100,7 @@ export function AILeadershipPage() {
         <div className="grid gap-4 md:grid-cols-3">
           {aiCompetencies.groups.map((group) => (
             <article key={group.title} className="card p-5">
-              <h3 className="font-semibold text-slate-900 dark:text-white">{group.title}</h3>
+              <h3 className="font-semibold text-stone-900 dark:text-white">{group.title}</h3>
               <ul className="mt-3 flex flex-wrap gap-1.5">
                 {group.items.map((item) => (
                   <li key={item}>
@@ -121,14 +121,14 @@ export function AILeadershipPage() {
           </div>
           <h2
             id="ai-leadership-heading"
-            className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white"
+            className="text-2xl font-bold tracking-tight text-stone-900 dark:text-white"
           >
             {aiInstitutionalLeadership.title}
           </h2>
         </div>
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {aiInstitutionalLeadership.items.map((item) => (
-            <li key={item} className="card p-4 font-medium text-slate-800 dark:text-slate-200">
+            <li key={item} className="card p-4 font-medium text-stone-800 dark:text-stone-200">
               {item}
             </li>
           ))}
