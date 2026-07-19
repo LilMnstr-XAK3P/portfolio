@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { CalendarClock, Check, Copy, Mail } from 'lucide-react';
+import { CalendarClock, Check, Copy, Mail, QrCode } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { ExternalLink } from '../components/ExternalLink';
 import { useSeo } from '../hooks/useSeo';
 import { profile, socialLinks } from '../data/profile';
+import { siteConfig } from '../data/siteConfig';
 
 function CopyEmailButton({ address }: { address: string }) {
   const [copied, setCopied] = useState(false);
@@ -152,6 +153,44 @@ export function ContactPage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* QR code */}
+      <section aria-labelledby="qr-heading">
+        <h2 id="qr-heading" className="mb-4 text-xl font-bold text-stone-900 dark:text-white">
+          Share This Site
+        </h2>
+        <div className="card flex flex-wrap items-center gap-6 p-6">
+          <img
+            src={`${import.meta.env.BASE_URL}images/portfolio-qr.png`}
+            alt={`QR code linking to ${siteConfig.siteUrl}`}
+            className="h-36 w-36 rounded-lg border border-stone-200 bg-white p-1 dark:border-stone-700"
+          />
+          <div className="min-w-48 flex-1">
+            <p className="text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+              Scan to open this portfolio, or download the QR code for slides, posters, and
+              conference materials.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href={`${import.meta.env.BASE_URL}images/portfolio-qr.png`}
+                download="Lily-Morningstar-portfolio-qr.png"
+                className="btn-secondary !py-2"
+              >
+                <QrCode className="h-4 w-4" aria-hidden="true" />
+                PNG
+              </a>
+              <a
+                href={`${import.meta.env.BASE_URL}images/portfolio-qr.svg`}
+                download="Lily-Morningstar-portfolio-qr.svg"
+                className="btn-secondary !py-2"
+              >
+                <QrCode className="h-4 w-4" aria-hidden="true" />
+                SVG (print quality)
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
