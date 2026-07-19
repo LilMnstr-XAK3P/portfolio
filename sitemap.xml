@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Update the domain if the site moves. Base URL is also configured in src/data/siteConfig.ts -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/about</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/teaching</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/ai-leadership</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/research</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/contributions</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/professional-development</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/student-success</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/media</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/cv</loc></url>
+  <url><loc>https://lilmnstr-xak3p.github.io/portfolio/contact</loc></url>
+</urlset>
