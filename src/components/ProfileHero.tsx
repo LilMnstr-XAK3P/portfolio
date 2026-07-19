@@ -45,7 +45,7 @@ export function ProfileHero() {
             <img
               src={import.meta.env.BASE_URL + profile.headshot}
               alt={`Professional headshot of ${profile.name}`}
-              className="h-48 w-48 rounded-2xl border border-stone-200 object-cover shadow-sm dark:border-stone-700 sm:h-56 sm:w-56"
+              className="h-48 w-48 rounded-2xl border border-stone-200 object-cover object-top shadow-sm dark:border-stone-700 sm:h-56 sm:w-56"
             />
           ) : (
             <div

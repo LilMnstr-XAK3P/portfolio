@@ -25,7 +25,7 @@ export const profile = {
   /** Path (relative to the site base) of the professional headshot.
    *  Add the image at public/images/headshot.jpg, then set this to
    *  'images/headshot.jpg'. While empty, a styled placeholder is shown. */
-  headshot: '',
+  headshot: 'images/headshot.jpg',
   bio: `Professor Lily Morningstar is a Lead Cybersecurity Faculty member at the College of Southern Nevada and a doctoral student in Curriculum and Instruction, with a specialization in Interaction and Media Sciences, at the University of Nevada, Las Vegas. She specializes in cybersecurity education, Linux systems administration, digital forensics, artificial intelligence integration, and workforce-aligned curriculum development.
 
 Professor Morningstar has led the redesign of multiple cybersecurity degree pathways; developed innovative courses in cloud security, ethical hacking, and digital forensics; and actively contributes to national computing education initiatives through the Association for Computing Machinery Committee for Computing Education in Community Colleges. Her professional activities include AI curriculum evaluation, faculty development in AI fluency and responsible AI, and collaboration with industry and academic partners to strengthen cybersecurity education.
