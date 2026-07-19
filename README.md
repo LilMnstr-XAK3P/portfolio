@@ -52,9 +52,9 @@ The static site is emitted to `dist/`.
 
 ## GitHub Pages deployment
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which lints, tests, builds, and deploys `dist/` to GitHub Pages.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which lints, tests, builds, and publishes `dist/` to the `gh-pages` branch, which GitHub Pages serves.
 
-One-time setup in the GitHub repository: **Settings → Pages → Build and deployment → Source: GitHub Actions.**
+One-time setup (usually automatic once the `gh-pages` branch exists): **Settings → Pages → Build and deployment → Source: Deploy from a branch → `gh-pages` / root.**
 
 ### Repository base-path configuration
 
