@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail } from 'lucide-react';
+import { CalendarClock, Mail } from 'lucide-react';
 import { profile, socialLinks } from '../data/profile';
 import { siteConfig } from '../data/siteConfig';
 import { ExternalLink } from './ExternalLink';
@@ -31,6 +31,17 @@ export function Footer() {
                 </a>
               </li>
             ))}
+            {profile.bookingUrl && (
+              <li>
+                <ExternalLink
+                  href={profile.bookingUrl}
+                  className="link inline-flex items-center gap-1.5"
+                >
+                  <CalendarClock className="h-3.5 w-3.5" aria-hidden="true" />
+                  Schedule an appointment
+                </ExternalLink>
+              </li>
+            )}
           </ul>
         </div>
         <div>

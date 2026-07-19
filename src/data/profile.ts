@@ -22,6 +22,10 @@ export const profile = {
     { label: 'UNLV', address: 'mornil1@unlv.nevada.edu' },
     { label: 'Personal', address: 'morningstar.lily@outlook.com' },
   ],
+  /** Microsoft Bookings link for office-hours appointments (via MS Teams).
+   *  Set to '' to hide the scheduling buttons everywhere. */
+  bookingUrl:
+    'https://outlook.office.com/book/MorningstarOfficeHours@student.csn.edu/?ismsaljsauthenabled',
   /** Path (relative to the site base) of the professional headshot.
    *  Add the image at public/images/headshot.jpg, then set this to
    *  'images/headshot.jpg'. While empty, a styled placeholder is shown. */

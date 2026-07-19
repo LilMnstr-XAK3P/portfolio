@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, Copy, Mail } from 'lucide-react';
+import { CalendarClock, Check, Copy, Mail } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { ExternalLink } from '../components/ExternalLink';
 import { useSeo } from '../hooks/useSeo';
@@ -51,6 +51,42 @@ export function ContactPage() {
         title="Contact"
         subtitle="Open to collaboration on cybersecurity education, AI in higher education, curriculum development, grant partnerships, student success initiatives, and media inquiries."
       />
+
+      {/* Book an appointment */}
+      {profile.bookingUrl && (
+        <section aria-labelledby="booking-heading">
+          <div className="card border-emerald-200/70 bg-emerald-50 p-6 dark:border-emerald-900/60 dark:bg-emerald-950/30">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-start gap-3">
+                <div className="rounded-lg bg-white p-2.5 text-brand-700 dark:bg-stone-900 dark:text-brand-400">
+                  <CalendarClock className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <div>
+                  <h2
+                    id="booking-heading"
+                    className="text-xl font-bold text-stone-900 dark:text-white"
+                  >
+                    Book an Appointment
+                  </h2>
+                  <p className="mt-1 max-w-md text-sm text-stone-600 dark:text-stone-400">
+                    Schedule office hours or a meeting online — appointments are held through
+                    Microsoft Teams.
+                  </p>
+                </div>
+              </div>
+              <a
+                href={profile.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                <CalendarClock className="h-4 w-4" aria-hidden="true" />
+                Schedule online
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Email */}
       <section aria-labelledby="email-heading">
