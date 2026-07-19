@@ -344,7 +344,6 @@ export function CVPage() {
             Print
           </button>
           <DownloadButton path={siteConfig.cvFiles.pdf} label="Download PDF" />
-          <DownloadButton path={siteConfig.cvFiles.docx} label="Download DOCX" />
         </div>
       </div>
 

@@ -220,4 +220,4 @@ File: `src/data/profile.ts` — edit in place. Leave social `url: ''` until the 
 
 ## CV downloads
 
-Drop `Lily-Morningstar-CV.pdf` and `Lily-Morningstar-CV.docx` into `public/documents/`. The buttons detect the files automatically.
+Drop `Lily-Morningstar-CV.pdf` into `public/documents/`. The button detects the file automatically.

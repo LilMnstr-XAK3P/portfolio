@@ -25,6 +25,5 @@ export const siteConfig = {
   ],
   cvFiles: {
     pdf: 'documents/Lily-Morningstar-CV.pdf',
-    docx: 'documents/Lily-Morningstar-CV.docx',
   },
 } as const;

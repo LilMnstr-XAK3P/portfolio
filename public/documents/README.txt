@@ -1,7 +1,6 @@
-Place the downloadable CV files in this folder using EXACTLY these names:
+Place the downloadable CV file in this folder using EXACTLY this name:
 
   Lily-Morningstar-CV.pdf
-  Lily-Morningstar-CV.docx
 
-While the files are absent, the CV page disables its download buttons and
+While the file is absent, the CV page disables its download button and
 shows "Updated CV will be available soon."

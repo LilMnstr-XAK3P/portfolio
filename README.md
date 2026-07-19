@@ -83,7 +83,7 @@ Everything editable lives in `src/data/`. See [CONTENT_GUIDE.md](CONTENT_GUIDE.m
 4. **Add a project** — `src/data/projects.ts`. Tag it `'ai'` to show it on the AI Leadership page.
 5. **Mark an item public or private** — every record has `public: boolean`. Only `public: true` records ever render. Use `internalNotes` for owner-only context; it is never displayed.
 6. **Add evidence files** — put files under `public/evidence/`, then reference them from a record's `evidence` array: `{ label: 'Certificate', href: 'evidence/my-cert.pdf' }`. Set `private: true` on an evidence item (or `evidencePrivate: true` on the record) to keep it off the site.
-7. **Replace the CV** — drop `Lily-Morningstar-CV.pdf` and `Lily-Morningstar-CV.docx` into `public/documents/`. The download buttons enable themselves automatically; while the files are absent the site shows "Updated CV will be available soon."
+7. **Replace the CV** — drop `Lily-Morningstar-CV.pdf` into `public/documents/`. The download button enables itself automatically; while the file is absent the site shows "Updated CV will be available soon."
 8. **Update social links** — `src/data/profile.ts` → `socialLinks`. Leave `url: ''` for accounts you have not set up; blank entries are hidden (never guess URLs).
 9. **Add a profile image** — save the headshot as `public/images/headshot.jpg`, then set `headshot: 'images/headshot.jpg'` in `src/data/profile.ts`.
 
@@ -120,7 +120,7 @@ The repository is public. `public: false` keeps a record off the **website**, bu
 
 ## Future enhancement ideas
 
-- Generate the PDF/DOCX CV automatically from the data files at build time
+- Generate the PDF CV automatically from the data files at build time
 - Evidence gallery with lightbox for certificates and artifacts
 - RSS/JSON feed of recent activity
 - Automated accessibility checks (axe) in CI
