@@ -64,7 +64,7 @@ export const socialLinks: SocialLink[] = [
     url: 'https://www.linkedin.com/in/lily-morningstar-7532a8124',
   },
   { id: 'github', label: 'GitHub', url: 'https://github.com/LilMnstr-XAK3P' },
-  { id: 'orcid', label: 'ORCID', url: '' }, // TODO: owner to supply
+  { id: 'orcid', label: 'ORCID', url: 'https://orcid.org/0009-0002-3587-4835' },
   { id: 'scholar', label: 'Google Scholar', url: '' }, // TODO: owner to supply
   { id: 'researchgate', label: 'ResearchGate', url: '' }, // TODO: owner to supply
 ];
