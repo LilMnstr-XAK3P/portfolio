@@ -17,11 +17,16 @@ export const profile = {
   /** Year she began teaching cybersecurity at CSN. Drives the
    *  "years teaching cybersecurity" statistic — edit if incorrect. */
   teachingSince: 2019,
-  emails: [
-    { label: 'CSN', address: 'lily.morningstar@csn.edu' },
-    { label: 'UNLV', address: 'mornil1@unlv.nevada.edu' },
-    { label: 'Personal', address: 'morningstar.lily@outlook.com' },
-  ],
+  emails: [{ label: 'CSN', address: 'lily.morningstar@csn.edu' }],
+  /** Campus office contact. This is a public office phone/address (not a
+   *  private/home number). Set office: null to hide the office section. */
+  office: {
+    campus: 'North Las Vegas Campus',
+    building: 'Arberry Telecom Building',
+    room: 'Office 2721',
+    address: '3200 E. Cheyenne Ave, North Las Vegas, NV 89030',
+    phone: '702.651.2653',
+  },
   /** Microsoft Bookings link for office-hours appointments (via MS Teams).
    *  Set to '' to hide the scheduling buttons everywhere. */
   bookingUrl:

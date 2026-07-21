@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CalendarClock, Mail } from 'lucide-react';
+import { CalendarClock, Mail, Phone } from 'lucide-react';
 import { profile, socialLinks } from '../data/profile';
 import { siteConfig } from '../data/siteConfig';
 import { ExternalLink } from './ExternalLink';
@@ -31,6 +31,17 @@ export function Footer() {
                 </a>
               </li>
             ))}
+            {profile.office && (
+              <li>
+                <a
+                  href={`tel:+1${profile.office.phone.replace(/\D/g, '')}`}
+                  className="link inline-flex items-center gap-1.5"
+                >
+                  <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+                  {profile.office.phone}
+                </a>
+              </li>
+            )}
             {profile.bookingUrl && (
               <li>
                 <ExternalLink

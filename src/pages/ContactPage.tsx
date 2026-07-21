@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CalendarClock, Check, Copy, Mail, QrCode } from 'lucide-react';
+import { CalendarClock, Check, Copy, Mail, MapPin, Phone, QrCode } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { ExternalLink } from '../components/ExternalLink';
 import { useSeo } from '../hooks/useSeo';
@@ -118,17 +118,43 @@ export function ContactPage() {
         </div>
       </section>
 
-      {/* Institution */}
+      {/* Institution & office */}
       <section aria-labelledby="institution-heading">
         <h2
           id="institution-heading"
           className="mb-4 text-xl font-bold text-stone-900 dark:text-white"
         >
-          Institution
+          Office &amp; Institution
         </h2>
-        <div className="card p-4">
-          <p className="font-medium text-stone-900 dark:text-white">{profile.institution}</p>
-          <p className="text-sm text-stone-600 dark:text-stone-400">{profile.primaryTitle}</p>
+        <div className="card space-y-4 p-5">
+          <div>
+            <p className="font-medium text-stone-900 dark:text-white">{profile.institution}</p>
+            <p className="text-sm text-stone-600 dark:text-stone-400">{profile.primaryTitle}</p>
+          </div>
+          {profile.office && (
+            <div className="space-y-2 border-t border-stone-100 pt-4 dark:border-stone-800">
+              <p className="flex items-start gap-2 text-sm text-stone-700 dark:text-stone-300">
+                <MapPin
+                  className="mt-0.5 h-4 w-4 shrink-0 text-brand-700 dark:text-brand-400"
+                  aria-hidden="true"
+                />
+                <span>
+                  {profile.office.campus} · {profile.office.building} · {profile.office.room}
+                  <br />
+                  {profile.office.address}
+                </span>
+              </p>
+              <p className="flex items-center gap-2 text-sm">
+                <Phone
+                  className="h-4 w-4 shrink-0 text-brand-700 dark:text-brand-400"
+                  aria-hidden="true"
+                />
+                <a href={`tel:+1${profile.office.phone.replace(/\D/g, '')}`} className="link">
+                  {profile.office.phone}
+                </a>
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
