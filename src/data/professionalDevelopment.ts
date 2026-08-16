@@ -322,20 +322,13 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     displayDate: 'August 14, 2026',
     type: 'Summit',
     category: 'Artificial Intelligence',
-    format: 'Virtual summit',
+    format: 'Virtual summit (attendee)',
     hours: 7,
+    // Attendance only (no hands-on workshops) — kept intentionally brief.
     summary:
-      'Seven-hour cybersecurity and AI summit focused on agentic AI security, AI-enabled SOC operations, Shadow AI governance, AI-assisted incident response, cyber threat intelligence, enterprise LLM infrastructure attacks, MCP-enabled threat hunting, and secure deployment of AI agents.',
-    skills: [
-      'Agentic AI security',
-      'AI-enabled SOC operations',
-      'Shadow AI governance',
-      'AI-assisted incident response',
-      'Cyber threat intelligence',
-      'MCP-enabled threat hunting',
-      'Secure AI agent deployment',
-    ],
-    tags: ['ai', 'cybersecurity', 'security-operations', 'governance'],
+      'Attended a seven-hour industry summit on cybersecurity in the age of AI, with sessions spanning agentic AI security, AI-enabled security operations, Shadow AI governance, and secure deployment of AI agents.',
+    skills: ['Agentic AI security', 'AI governance', 'AI-enabled security operations'],
+    tags: ['ai', 'cybersecurity'],
     public: true,
   },
   {
