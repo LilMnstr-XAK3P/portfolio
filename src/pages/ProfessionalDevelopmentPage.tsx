@@ -15,7 +15,6 @@ import {
   distinctYears,
   searchItems,
   totalVerifiedHours,
-  totalCeus,
 } from '../lib/dataUtils';
 
 /**
@@ -70,18 +69,18 @@ export function ProfessionalDevelopmentPage() {
       />
 
       {/* Totals for the current view */}
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+      <div className="grid grid-cols-3 gap-4">
         <StatCard value={filtered.length} label="Activities shown" />
         <StatCard
           value={totalVerifiedHours(filtered)}
-          label="Verified hours"
-          note="Verified durations only"
+          label="CPE / PD hours"
+          note="CPE credits and CEU contact hours combined"
         />
-        <StatCard value={totalCeus(filtered)} label="CEUs" />
         <StatCard value={filtered.filter((a) => a.certificate).length} label="Certificates" />
       </div>
       <p className="-mt-4 text-xs text-stone-500 dark:text-stone-400">
-        Totals reflect activities with verified duration information.
+        Hours combine CPE credits and CEU contact hours (1 CEU = 10 contact hours) and reflect only
+        activities with a verified duration.
       </p>
 
       {/* Search + filters */}

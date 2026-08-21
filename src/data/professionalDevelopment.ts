@@ -402,7 +402,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     type: 'Course',
     category: 'Cybersecurity Education',
     format: 'Self-paced online training',
-    // hours: not stated on the (ISC)² completion record.
+    hours: 60, // 60 CPE/CEU credits (per owner)
     certificate: true,
     summary:
       'Completed (ISC)² CISSP self-paced training across all eight CISSP domains and passed the course assessment, earning the CISSP Course Completion Badge.',
