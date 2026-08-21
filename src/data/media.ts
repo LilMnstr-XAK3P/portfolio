@@ -10,7 +10,7 @@ export const mediaItems: MediaItem[] = [
     startDate: '2026-04-09',
     displayDate: 'April 9, 2026',
     summary:
-      'A 40-minute televised conversation about the CSN cybersecurity program, cybersecurity careers, educational opportunities, why students should consider CSN, and workforce preparation.',
+      'A televised conversation about the CSN cybersecurity program, cybersecurity careers, educational opportunities, why students should consider CSN, and workforce preparation.',
     topics: [
       'CSN cybersecurity program',
       'Cybersecurity careers',
@@ -18,8 +18,25 @@ export const mediaItems: MediaItem[] = [
       'Why students should consider CSN',
       'Workforce preparation',
     ],
+    url: 'https://youtu.be/7h8iM3HTLyY',
     tags: ['television', 'interview', 'outreach'],
     featured: true,
+    public: true,
+  },
+  {
+    id: 'cyberfed-nice-competitions-podcast',
+    title: 'NICE Competitions Subgroup Podcast',
+    outlet: 'CyberFed (YouTube)',
+    kind: 'Podcast',
+    // TODO (owner): confirm the publish date — YouTube reported August 8, 2020,
+    // but it could not be fully verified through the site's bot protection.
+    startDate: '2020-08-08',
+    displayDate: 'August 8, 2020',
+    summary:
+      'A CyberFed podcast conversation on the NICE Competitions Subgroup and the role of cybersecurity competitions in building the workforce.',
+    topics: ['NICE Competitions Subgroup', 'Cybersecurity competitions', 'Workforce development'],
+    url: 'https://youtu.be/P1vFL0_6PJU',
+    tags: ['podcast', 'interview', 'outreach', 'competitions'],
     public: true,
   },
   {

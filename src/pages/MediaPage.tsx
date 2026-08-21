@@ -1,4 +1,4 @@
-import { CalendarDays, Newspaper, Tv } from 'lucide-react';
+import { CalendarDays, Newspaper, Play, Tv } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { ExternalLink } from '../components/ExternalLink';
 import { EmptyState } from '../components/EmptyState';
@@ -66,6 +66,12 @@ export function MediaPage() {
                   </ul>
                 </div>
               )}
+              {featured.url && (
+                <ExternalLink href={featured.url} className="btn-primary">
+                  <Play className="h-4 w-4" aria-hidden="true" />
+                  Watch the interview
+                </ExternalLink>
+              )}
             </div>
           </article>
         </section>
@@ -96,7 +102,8 @@ export function MediaPage() {
               {item.url && (
                 <p className="mt-3">
                   <ExternalLink href={item.url} className="link text-sm">
-                    Read on {item.outlet}
+                    {/^(Podcast|Interview|Television)/.test(item.kind) ? 'Watch' : 'Read'} on{' '}
+                    {item.outlet}
                   </ExternalLink>
                 </p>
               )}
