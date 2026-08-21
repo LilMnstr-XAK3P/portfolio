@@ -419,4 +419,30 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     tags: ['cybersecurity', 'certificate'],
     public: true,
   },
+  {
+    id: 'qm-teaching-online-certificate-2022',
+    title: 'Quality Matters — Teaching Online Certificate',
+    provider: 'Quality Matters (QM)',
+    startDate: '2021-04-08',
+    endDate: '2022-03-18',
+    displayDate: 'April 2021 – March 2022',
+    type: 'Certificate',
+    category: 'Teaching & Pedagogy',
+    format: 'Online professional-development series',
+    // hours: not stated on the QM completion certificates.
+    certificate: true,
+    summary:
+      "Earned the Quality Matters (QM) Teaching Online Certificate by completing QM's online-teaching professional-development series: Connect Your Learning Objectives to Assessments; Active Learning Strategies; Gauging Your Technology Skills; Evaluating Your Course Design; Exploring Your Institution's Policies; Orienting Your Online Learners; Connecting Learning Theories to Your Teaching Strategies; Creating Presence in Your Online Course; and Assessing Your Learners.",
+    skills: [
+      'Online teaching',
+      'Course design',
+      'Learning-objective and assessment alignment',
+      'Active learning strategies',
+      'Learner engagement and presence',
+      'Quality assurance in online learning',
+    ],
+    application: 'Informs quality-assured online and hybrid course design at CSN.',
+    tags: ['teaching', 'online-learning', 'pedagogy', 'certificate'],
+    public: true,
+  },
 ];
