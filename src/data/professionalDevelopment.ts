@@ -554,6 +554,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     type: 'Train-the-Trainer',
     category: 'Cybersecurity Education',
     format: 'Instructor training series',
+    certificate: true,
     summary:
       'Completed the CompTIA Instructor Network (CIN) Train-the-Trainer series for Security+ (SY0-601), preparing to deliver certification-aligned Security+ instruction.',
     skills: ['Security+ instruction', 'Certification-aligned teaching'],
@@ -569,6 +570,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     type: 'Train-the-Trainer',
     category: 'Artificial Intelligence',
     format: 'Instructor training series',
+    certificate: true,
     summary:
       'Completed the CompTIA Instructor Network (CIN) Train-the-Trainer series for AI Fundamentals, preparing to deliver AI fundamentals instruction.',
     skills: ['AI fundamentals instruction', 'Certification-aligned teaching'],
@@ -584,6 +586,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     type: 'Institute',
     category: 'Curriculum Development',
     format: 'Faculty development institute',
+    certificate: true,
     // TODO (owner): certificate filename indicates an AWS / cloud-computing
     // emphasis; the certificate text layer does not state it. Confirm the track.
     summary:
@@ -602,6 +605,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     type: 'Institute',
     category: 'Curriculum Development',
     format: 'Faculty development institute',
+    certificate: true,
     summary:
       'Completed the 2021 Working Connections IT Faculty Development Institute session "The Nuts and Bolts of a Two-Year Data Science Degree," on designing associate-level data science curriculum.',
     skills: ['Curriculum design', 'Data science education', 'Faculty development'],
@@ -639,6 +643,24 @@ export const professionalDevelopment: ProfessionalActivity[] = [
       'Completed the Bridge Learn course-design program on structuring effective, learning-outcome-driven courses (score 100%).',
     skills: ['Course design', 'Learning-outcome development'],
     tags: ['teaching', 'pedagogy', 'certificate'],
+    public: true,
+  },
+  {
+    id: 'comptia-aplus-cert',
+    title: 'CompTIA A+ (certified)',
+    provider: 'CompTIA',
+    // Earned 2018; used as the sort date. The credential is current —
+    // renewed via continuing education (June 2024), valid through June 2027.
+    startDate: '2018-06-09',
+    displayDate: 'Earned 2018 · current through June 2027',
+    type: 'Certification',
+    category: 'Cybersecurity Education',
+    format: 'Industry certification',
+    certificate: true,
+    summary:
+      'CompTIA A+ certification covering foundational IT support, hardware, operating systems, and troubleshooting. Maintained current through continuing education — valid through June 2027.',
+    skills: ['IT fundamentals', 'Hardware', 'Operating systems', 'Troubleshooting'],
+    tags: ['comptia', 'certification', 'it-fundamentals'],
     public: true,
   },
 ];
