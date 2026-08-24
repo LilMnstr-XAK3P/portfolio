@@ -90,8 +90,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
     id: 'nice-conference-2026',
     title: 'NICE Conference and Expo',
     provider: 'NICE (National Initiative for Cybersecurity Education)',
-    // TODO (owner): confirm exact 2026 conference dates. Workshop was Mon June 1;
-    // the original brief listed May 1–3 — using June to match the workshop date.
+    // Dates confirmed by owner (June 2026; workshop Mon June 1).
     startDate: '2026-06-01',
     displayDate: 'June 2026',
     type: 'Conference',
@@ -145,7 +144,7 @@ export const professionalDevelopment: ProfessionalActivity[] = [
   },
   {
     id: 'anthropic-ai-fluency-2026',
-    title: 'Anthropic Teaching AI Fluency',
+    title: 'Anthropic — Teaching the AI Fluency Framework',
     provider: 'Anthropic',
     startDate: '2026-06-01',
     displayDate: 'June 2026',
